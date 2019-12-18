@@ -1,0 +1,67 @@
+@import 'assets';
+
+.request-quote-component {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 15px 0;
+}
+.quote-header {
+    font-family: $sans3;
+    font-size: 25px;
+    color: $black3;
+    margin: 10px 0 0 10px;
+}
+.quote-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+}
+.quote-column {
+    width: 300px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.quote-label {
+    font-family: $mono;
+    font-size: 18px;
+    color: $black4;
+    padding-bottom: 5px;
+    padding-top: 10px;
+}
+
+.quote-input {
+    width: 90%;
+    height: 25px;
+    font-size: 18px;
+    padding-left: 5px;
+}
+
+.quote-button {
+    font-family: $mono;
+    font-size: 20px;
+    color: $black5;
+    background: $white;
+    border: 1px solid $black5;
+    padding: 4px 25px;
+    border-radius: 25px;
+    margin: 24px auto;
+    transition: all 0.3s ease;
+    i {
+        padding-left: 10px;
+        font-size: 16px;
+    }
+}
+.quote-button:hover {
+    transform: scale(1.05);
+    font-weight: 600;
+    box-shadow: 1px 1px 3px $gray5;
+}

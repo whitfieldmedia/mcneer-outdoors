@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css?family=Inconsolata:400,700|Montserrat:400,500,600,700|Open+Sans:400,600,700|Playfair+Display:400,700,900&display=swap");
+.contact-page {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-form {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: auto;
+  padding: 25px 10px;
+  margin: 0;
+}
+
+.contact-column {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.contact-label {
+  font-family: "Inconsolata", monospace;
+  font-size: 20px;
+  color: #4a4a4a;
+  padding: 15px 0 5px 0;
+  margin: 0;
+}
+
+.contact-input {
+  font-family: "Inconsolata", monospace;
+  font-size: 18px;
+  color: #4a4a4a;
+  padding: 8px 5px;
+  width: 500px;
+}
+
+.contact-button {
+  font-family: "Inconsolata", monospace;
+  font-size: 20px;
+  color: #3F403F;
+  background: inherit;
+  padding: 8px 25px;
+  margin: 25px 0 0 0;
+  border-radius: 25px;
+}
+.contact-button i {
+  padding: 0 0 0 10px;
+}
+
+.contact-button:hover {
+  transform: scale(1.02);
+  box-shadow: 1px 1px 2px #7E807F;
+}
+
+.contact-link-row {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  width: 90%;
+  max-width: 1200px;
+}
+
+.contact-link-holder {
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.contact-header3 {
+  font-family: "Inconsolata", monospace;
+  font-size: 25px;
+  color: #2D3A34;
+  margin: 0 0 5px 55px;
+  padding: 0;
+}
+
+.contact-link {
+  font-size: 20px;
+  color: #4a4a4a;
+  font-family: "Open Sans", sans-serif;
+  text-decoration: none;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 0;
+  padding: 0;
+}
+.contact-link .material-icons {
+  font-size: 24px;
+  color: #FCFFFD;
+  background: #4a4a4a;
+  border-radius: 50%;
+  padding: 10px;
+  margin: -20px 10px 0 0;
+}
+
+.contact-text {
+  font-size: 20px;
+  color: #4a4a4a;
+  font-family: "Open Sans", sans-serif;
+  text-decoration: none;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 0;
+  padding: 0;
+}
+.contact-text .material-icons {
+  font-size: 24px;
+  color: #FCFFFD;
+  background: #4a4a4a;
+  border-radius: 50%;
+  padding: 10px;
+  margin: -20px 10px 0 0;
+}
+
+/*# sourceMappingURL=contact.css.map */

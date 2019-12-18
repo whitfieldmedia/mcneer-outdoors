@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css?family=Inconsolata:400,700|Montserrat:400,500,600,700|Open+Sans:400,600,700|Playfair+Display:400,700,900&display=swap");
+.request-quote-component {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  padding: 15px 0;
+}
+
+.quote-header {
+  font-family: "Open Sans", sans-serif;
+  font-size: 25px;
+  color: #2D3A34;
+  margin: 10px 0 0 10px;
+}
+
+.quote-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  padding-top: 15px;
+}
+
+.quote-column {
+  width: 300px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.quote-label {
+  font-family: "Inconsolata", monospace;
+  font-size: 18px;
+  color: #3F403F;
+  padding-bottom: 5px;
+  padding-top: 10px;
+}
+
+.quote-input {
+  width: 90%;
+  height: 25px;
+  font-size: 18px;
+  padding-left: 5px;
+}
+
+.quote-button {
+  font-family: "Inconsolata", monospace;
+  font-size: 20px;
+  color: #4a4a4a;
+  background: #FCFFFD;
+  border: 1px solid #4a4a4a;
+  padding: 4px 25px;
+  border-radius: 25px;
+  margin: 24px auto;
+  transition: all 0.3s ease;
+}
+.quote-button i {
+  padding-left: 10px;
+  font-size: 16px;
+}
+
+.quote-button:hover {
+  transform: scale(1.05);
+  font-weight: 600;
+  box-shadow: 1px 1px 3px #7E807F;
+}
+
+/*# sourceMappingURL=quote.css.map */

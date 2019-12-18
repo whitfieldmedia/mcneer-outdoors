@@ -1,0 +1,27 @@
+@import 'assets';
+
+body {
+    width: 100vw;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    background: #f7f7f7;
+    overflow-y: hidden;
+    position: relative;
+
+}
+
+#app-container {
+    width: 100vw;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    background: #f7f7f7;
+    overflow-x: hidden;
+    position: relative;
+    -ms-overflow-style: none;
+}
+
+#app-container::-webkit-scrollbar {
+    display: none;
+}

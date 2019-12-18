@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css?family=Inconsolata:400,700|Montserrat:400,500,600,700|Open+Sans:400,600,700|Playfair+Display:400,700,900&display=swap");
+.about-page {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-top-container {
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-start;
+  align-items: flex-end;
+  height: 50vh;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  background: url("../images/garden_green_grass.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.about-top-img {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  z-index: 0;
+}
+
+.about-row {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.about-main-column {
+  width: 65%;
+  max-width: 1000px;
+  min-width: 300px;
+  height: auto;
+  padding: 0 2.5%;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-estimate-column {
+  justify-self: flex-end;
+  align-self: flex-start;
+  width: 30%;
+  max-width: 800px;
+  min-width: 250px;
+}
+
+.about-header {
+  font-size: 35px;
+  color: #2a2a2a;
+  font-family: "Playfair Display", serif;
+  text-align: center;
+}
+
+.about-par {
+  font-size: 22px;
+  color: #4a4a4a;
+  font-family: "Montserrat", sans-serif;
+}
+
+@media only screen and (max-width: 1000px) {
+  .about-row {
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-main-column {
+    width: 90%;
+  }
+
+  .about-estimate-column {
+    width: 100%;
+    justify-self: center;
+    align-self: center;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .about-header {
+    font-size: 30px;
+  }
+
+  .about-par {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .about-par {
+    font-size: 18px;
+  }
+}
+
+/*# sourceMappingURL=about.css.map */

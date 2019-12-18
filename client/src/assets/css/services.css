@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css?family=Inconsolata:400,700|Montserrat:400,500,600,700|Open+Sans:400,600,700|Playfair+Display:400,700,900&display=swap");
+.service-page {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px;
+}
+
+.service-top-section {
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+
+#pergola_service_img {
+  align-self: flex-end;
+}
+
+.service-top-img {
+  width: auto;
+  height: auto;
+  min-width: 100%;
+  min-height: 100%;
+  display: block;
+  max-height: 125%;
+}
+
+.service-section {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  padding: 45px 0;
+  margin: 0;
+  max-width: 90%;
+  width: auto;
+}
+
+.service-header {
+  font-family: "Playfair Display", serif;
+  color: #2D3A34;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.service-header2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 25px;
+  color: #3F403F;
+}
+
+.service-header3 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 25px;
+  color: #3F403F;
+  margin: 0;
+  padding: 0;
+}
+
+.service-par {
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+  color: #4a4a4a;
+  font-weight: 400;
+  width: 90%;
+  max-width: 1000px;
+}
+
+.service-list-container {
+  display: flex;
+  margin: 0 auto;
+  flex-flow: column;
+  height: auto;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+.service-list-wrapper {
+  margin: 0;
+  margin-bottom: 50px;
+  padding: 0;
+  display: flex;
+  flex-flow: row wrap;
+  width: auto;
+  max-width: 90%;
+  justify-self: center;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.service-list-item {
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+  list-style-type: circle;
+  color: #4a4a4a;
+  padding: 5px 30px 5px 5px;
+  list-style-position: inside;
+}
+
+.service-list-link {
+  color: #4287f5;
+  text-decoration: none;
+}
+
+.service-list-item-big {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  width: auto;
+  list-style-type: circle;
+  margin: 0;
+  color: #4a4a4a;
+  padding: 5px;
+  width: 100%;
+  margin-left: 25px;
+  justify-content: center;
+  justify-items: center;
+}
+
+.service-quote-container {
+  align-self: flex-start;
+  justify-self: flex-end;
+  width: 30%;
+  max-width: 350px;
+  min-width: 250px;
+}
+
+.service-carousel-container {
+  width: 100%;
+  height: auto;
+}
+
+@media only screen and (max-width: 1000px) {
+  .service-header {
+    font-size: 35px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .service-top-section {
+    height: 40vh;
+  }
+
+  .service-header {
+    font-size: 30px;
+  }
+
+  .service-par {
+    font-size: 20px;
+  }
+
+  .service-header2 {
+    font-size: 23px;
+  }
+
+  .service-header3 {
+    font-size: 23px;
+  }
+
+  .service-list-item {
+    font-size: 20px;
+  }
+
+  .service-list-item-big {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .service-top-section {
+    height: 30vh;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .service-top-section {
+    height: 20vh;
+  }
+
+  .service-header {
+    font-size: 27px;
+  }
+
+  .service-par {
+    font-size: 18px;
+  }
+
+  .service-header2 {
+    font-size: 20px;
+  }
+
+  .service-header3 {
+    font-size: 20px;
+  }
+
+  .service-list-item {
+    font-size: 18px;
+  }
+
+  .service-list-item-big {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .service-list-wrapper {
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+}
+
+/*# sourceMappingURL=services.css.map */

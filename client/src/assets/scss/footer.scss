@@ -1,0 +1,32 @@
+@import 'assets';
+
+footer {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 0 10px 0;
+    margin: 0;
+    background-color: $black4;
+}
+
+.footer-row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-text {
+    font-family: $sans;
+    font-size: 20px;
+    color: $white;
+    padding: 5px 14px;
+}
+
+.footer-credits {
+    font-family: $sans3;
+    font-size: 16px;
+    color: $white2;
+    text-align: center;
+}
