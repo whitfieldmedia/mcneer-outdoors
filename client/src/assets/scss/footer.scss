@@ -9,7 +9,19 @@ footer {
     margin: 0;
     background-color: $black4;
 }
-
+.footer-logo-holder {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-logo {
+    width: 300px;
+    height: auto;
+    position: relative;
+    padding: 20px 0;
+}
 .footer-row {
     display: flex;
     flex-flow: row wrap;
@@ -26,7 +38,33 @@ footer {
 
 .footer-credits {
     font-family: $sans3;
-    font-size: 16px;
+    font-size: 14px;
     color: $white2;
     text-align: center;
+}
+
+@media only screen and (max-width: 870px) {
+    .footer-text {
+        margin: 0;
+        font-size: 18px;
+    }
+    .footer-credits {
+        font-size: 13px;
+    }
+    .footer-logo {
+        width: 250px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .footer-logo {
+        width: 50%;
+        min-width: 200px;
+    }
+    .footer-credits {
+        font-size: 12px;
+    }
+    .footer-test {
+        font-size: 16px;
+    }
 }

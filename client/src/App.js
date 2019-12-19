@@ -3,7 +3,6 @@ import Nav from './components/Nav';
 import Home from './pages/Home';
 import About from './pages/About';
 import Contact from './pages/Contact';
-import Services from './pages/Services';
 import Concrete from './pages/services/Concrete';
 import Gutters from './pages/services/Gutters';
 import LandscapeLighting from './pages/services/LandscapeLighting';
@@ -19,7 +18,7 @@ import LawnGardening from './pages/services/LawnGardening';
 import Landscaping from './pages/services/Landscaping';
 import ProfessionalLawnCare from './pages/services/ProfessionalLawnCare';
 import { Switch, Route } from 'react-router-dom';
-import './assets/scss/styles.scss';
+import './assets/css/styles.css';
 
 class App extends React.Component {
     render() {
@@ -30,7 +29,6 @@ class App extends React.Component {
                     <Route exact path="/" component={Home} />
                     <Route path="/about-us" component={About} />
                     <Route path="/contact-us" component={Contact} />
-                    <Route path="/services" component={Services} />
                     <Route path="/concrete" component={Concrete} />
                     <Route path="/seamless-gutters" component={Gutters} />
                     <Route path="/landscape-lighting" component={LandscapeLighting} />
@@ -41,7 +39,7 @@ class App extends React.Component {
                     <Route path="/sprinklers" component={Sprinklers} />
                     <Route path="/fire-pits"component={Fireplaces} />
                     <Route path="/pergola" component={Pergola} />
-                    <Route path="/lawn-gardening" component={LawnGardening} />
+                    <Route path="/gardening" component={LawnGardening} />
                     <Route path="/landscaping" component={Landscaping} />
                     <Route path="/professional-lawn-care" component={ProfessionalLawnCare} />
                 </Switch>

@@ -30,7 +30,7 @@ app.use('/contact', (req, res) => {
     console.log("SENDING")
     const message = {
         from: "spencer@wemakeads.com",
-        to: "backmanspencer99@gmail.com",
+        to: "phil@mcneeroutdoors.com",
         subject: "McNeer Outdoor Form Submission",
         text: `
         Name: ${req.body.name} 
@@ -56,7 +56,7 @@ app.use('/send', (req, res) => {
     console.log("SENDING")
     const message = {
         from: "spencer@wemakeads.com",
-        to: "backmanspencer99@gmail.com",
+        to: "phil@mcneeroutdoors.com",
         subject: "McNeer Outdoor Form Submission",
         text: `
         Name: ${req.body.name} 

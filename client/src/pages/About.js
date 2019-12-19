@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import RequestQuote from '../components/RequestQuote';
-import '../assets/scss/about.scss';
+import '../assets/css/about.css';
 
 function About() {
+    useEffect(() => {
+        window.scrollTo(0,0)
+    }, [])
     return (
         <div className="about-page">
             <div className="about-top-container"></div>

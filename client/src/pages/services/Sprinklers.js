@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import background from '../../assets/images/lawn_care_sprinklers.jpg';
-import '../../assets/scss/services.scss';
+import '../../assets/css/services.css';
 
 function Sprinklers() {
+    useEffect(() => {
+        window.scrollTo(0,0)
+    }, [])
     return (
         <div className="service-page">
             <div className="service-top-section">

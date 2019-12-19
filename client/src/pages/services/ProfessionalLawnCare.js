@@ -1,12 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import img from '../../assets/images/lawn_care.jpg';
 import img2 from '../../assets/images/landscape3.jpg'
 import img3 from '../../assets/images/landscape.jpg';
 import Carousel from '../../components/Carousel';
 import { Link } from 'react-router-dom';
-import '../../assets/scss/services.scss';
+import '../../assets/css/services.css';
 
 function ProfessionalLawnCare() {
+    useEffect(() => {
+        window.scrollTo(0,0)
+    }, [])
     return (
         <div className="service-page">
             <h1 className="service-header">

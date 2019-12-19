@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../assets/scss/carousel.scss';
+import '../assets/css/carousel.css';
 
 function Carousel(props) {
     const [ count, setCount ] = useState(0)

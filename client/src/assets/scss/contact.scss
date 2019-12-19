@@ -2,9 +2,36 @@
 
 .contact-page {
     display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 90vh;
+    margin-top: 50px;
+}
+.contact-section {
+    width: 70%;
+    display: flex;
     flex-flow: column;
     justify-content: center;
     align-items: center;
+}
+.contact-par {
+    font-family: $sans;
+    font-size: 20px;
+    color: $black5;
+    width: auto;
+    max-width: 800px;
+    margin: 25px 0;
+    padding: 20px 0;
+    border-top: 1px solid $gray2;
+    border-bottom: 1px solid $gray2;
+}
+.contact-header {
+    font-family: $serif;
+    font-size: 30px;
+    color: $black3;
+    padding: 0;
+    margin: 0;
 }
 
 .contact-form {
@@ -16,6 +43,8 @@
     height: auto;
     padding: 25px 10px;
     margin: 0;
+    margin-bottom: 25px;
+    background: $white2;
 }
 
 .contact-column {
@@ -47,8 +76,9 @@
 .contact-button {
     font-family: $mono;
     font-size: 20px;
-    color: $black4;
-    background: inherit;
+    color: $white;
+    background: $green2;
+    border: none;
     padding: 8px 25px;
     margin: 25px 0 0 0;
     border-radius: 25px;
@@ -61,13 +91,31 @@
     transform: scale(1.02);
     box-shadow: 1px 1px 2px $gray5;
 }
+.contact-link-column {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.contact-link-header {
+    font-family: $mono;
+    font-weight: 700;
+    font-size: 25px;
+    text-align: center;
+    padding: 10px 0;
+    margin: 0;
+}
+
 .contact-link-row {
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    width: 90%;
-    max-width: 1200px;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    max-width: 800px;
+    padding: 0 0 25px 0;
+    margin: 0;
 }
 
 .contact-link-holder {
@@ -75,14 +123,15 @@
     flex-flow: column;
     justify-content: flex-start;
     align-items: flex-start;
+    padding: 5px 25px;
 }
 
 .contact-header3 {
     font-family: $mono;
-    font-size: 25px;
+    font-size: 22px;
     color: $black3;
-    margin: 0 0 5px 55px;
-    padding: 0;
+    margin: 0;
+    padding: 0 0 5px 0;
 }
 
 .contact-link {
@@ -96,14 +145,10 @@
     align-items: flex-start;
     margin: 0;
     padding: 0;
-    .material-icons {
-        font-size: 24px;
-        color: $white;
-        background: $black5;
-        border-radius: 50%;
-        padding: 10px;
-        margin: -20px 10px 0 0;
-    }
+}
+.contact-link:hover {
+    transform: scale(1.02);
+    color: $green;
 }
 
 .contact-text {
@@ -125,4 +170,90 @@
         padding: 10px;
         margin: -20px 10px 0 0;
     } 
+}
+
+.contact-facebook-wrapper {
+    padding: 25px 10px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .contact-page {
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .contact-section {
+        width: 100%;
+    }
+}
+
+
+@media only screen and (max-width: 900px) {
+    .contact-par {
+        width: 90%;
+    }
+    .contact-header {
+        font-size: 28px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .contact-column {
+        width: auto;
+    }
+    .contact-form {
+        width: 100%;
+        padding: 25px 0;
+    }
+    .contact-input {
+        width: 90%;
+        min-width: 400px;
+        max-width: 500px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .contact-input {
+        min-width: 300px;
+        font-size: 16px;
+    }
+    .contact-header3 {
+        font-size: 20px;
+    }
+    .contact-label {
+        font-size: 18px;
+    }
+    .contact-link {
+        font-size: 18px;
+    }
+    .contact-par {
+        font-size: 18px;
+    }
+    .contact-link-row {
+        flex-flow: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .contact-input {
+        width: 275px;
+        min-width: 250px;
+        margin: 0;
+    }
+    .contact-column {
+        margin: 0;
+        padding: 0;
+    }
+    .contact-form {
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .contact-input {
+        width: 250px;
+        
+    }
 }

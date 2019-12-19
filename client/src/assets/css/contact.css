@@ -1,9 +1,39 @@
 @import url("https://fonts.googleapis.com/css?family=Inconsolata:400,700|Montserrat:400,500,600,700|Open+Sans:400,600,700|Playfair+Display:400,700,900&display=swap");
 .contact-page {
   display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 90vh;
+  margin-top: 50px;
+}
+
+.contact-section {
+  width: 70%;
+  display: flex;
   flex-flow: column;
   justify-content: center;
   align-items: center;
+}
+
+.contact-par {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  color: #4a4a4a;
+  width: auto;
+  max-width: 800px;
+  margin: 25px 0;
+  padding: 20px 0;
+  border-top: 1px solid #CACCCB;
+  border-bottom: 1px solid #CACCCB;
+}
+
+.contact-header {
+  font-family: "Playfair Display", serif;
+  font-size: 30px;
+  color: #2D3A34;
+  padding: 0;
+  margin: 0;
 }
 
 .contact-form {
@@ -15,6 +45,8 @@
   height: auto;
   padding: 25px 10px;
   margin: 0;
+  margin-bottom: 25px;
+  background: #F5F5F5;
 }
 
 .contact-column {
@@ -45,8 +77,9 @@
 .contact-button {
   font-family: "Inconsolata", monospace;
   font-size: 20px;
-  color: #3F403F;
-  background: inherit;
+  color: #FCFFFD;
+  background: #01C261;
+  border: none;
   padding: 8px 25px;
   margin: 25px 0 0 0;
   border-radius: 25px;
@@ -60,13 +93,31 @@
   box-shadow: 1px 1px 2px #7E807F;
 }
 
+.contact-link-column {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.contact-link-header {
+  font-family: "Inconsolata", monospace;
+  font-weight: 700;
+  font-size: 25px;
+  text-align: center;
+  padding: 10px 0;
+  margin: 0;
+}
+
 .contact-link-row {
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-evenly;
-  align-items: flex-start;
-  width: 90%;
-  max-width: 1200px;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  max-width: 800px;
+  padding: 0 0 25px 0;
+  margin: 0;
 }
 
 .contact-link-holder {
@@ -74,14 +125,15 @@
   flex-flow: column;
   justify-content: flex-start;
   align-items: flex-start;
+  padding: 5px 25px;
 }
 
 .contact-header3 {
   font-family: "Inconsolata", monospace;
-  font-size: 25px;
+  font-size: 22px;
   color: #2D3A34;
-  margin: 0 0 5px 55px;
-  padding: 0;
+  margin: 0;
+  padding: 0 0 5px 0;
 }
 
 .contact-link {
@@ -96,13 +148,10 @@
   margin: 0;
   padding: 0;
 }
-.contact-link .material-icons {
-  font-size: 24px;
-  color: #FCFFFD;
-  background: #4a4a4a;
-  border-radius: 50%;
-  padding: 10px;
-  margin: -20px 10px 0 0;
+
+.contact-link:hover {
+  transform: scale(1.02);
+  color: #00753A;
 }
 
 .contact-text {
@@ -124,6 +173,96 @@
   border-radius: 50%;
   padding: 10px;
   margin: -20px 10px 0 0;
+}
+
+.contact-facebook-wrapper {
+  padding: 25px 10px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .contact-page {
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact-section {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .contact-par {
+    width: 90%;
+  }
+
+  .contact-header {
+    font-size: 28px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .contact-column {
+    width: auto;
+  }
+
+  .contact-form {
+    width: 100%;
+    padding: 25px 0;
+  }
+
+  .contact-input {
+    width: 90%;
+    min-width: 400px;
+    max-width: 500px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .contact-input {
+    min-width: 300px;
+    font-size: 16px;
+  }
+
+  .contact-header3 {
+    font-size: 20px;
+  }
+
+  .contact-label {
+    font-size: 18px;
+  }
+
+  .contact-link {
+    font-size: 18px;
+  }
+
+  .contact-par {
+    font-size: 18px;
+  }
+
+  .contact-link-row {
+    flex-flow: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .contact-input {
+    width: 275px;
+    min-width: 250px;
+    margin: 0;
+  }
+
+  .contact-column {
+    margin: 0;
+    padding: 0;
+  }
+
+  .contact-form {
+    margin: 0;
+  }
+}
+@media only screen and (max-width: 300px) {
+  .contact-input {
+    width: 250px;
+  }
 }
 
 /*# sourceMappingURL=contact.css.map */

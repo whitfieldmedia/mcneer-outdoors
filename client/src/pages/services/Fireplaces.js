@@ -1,11 +1,14 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import img from '../../assets/images/outdoor_fireplace.jpg';
 import img2 from '../../assets/images/firepit.jpg';
 import img3 from '../../assets/images/firepit2.jpg';
 import Carousel from '../../components/Carousel';
-import '../../assets/scss/services.scss';
+import '../../assets/css/services.css';
 
 function Fireplaces() {
+    useEffect(() => {
+        window.scrollTo(0,0)
+    }, [])
     return (
         <div className="service-page">
             <h1 className="service-header">

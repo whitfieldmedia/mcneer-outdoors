@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import background from '../../assets/images/sod.jpg'
-import '../../assets/scss/services.scss';
+import '../../assets/css/services.css';
 
 function SodAndHydroseeding() {
+    useEffect(() => {
+        window.scrollTo(0,0)
+    }, [])
     return (
         <div className="service-page">
             <div className="service-top-section">

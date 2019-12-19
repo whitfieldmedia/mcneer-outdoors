@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import img from '../../assets/images/pool2.jpg';
 import img2 from '../../assets/images/pool3.jpg';
 import img3 from '../../assets/images/pool4.jpg';
@@ -8,9 +8,12 @@ import img6 from '../../assets/images/pool_waterfalls.jpg';
 import img7 from '../../assets/images/pool_and_hotub.jpg';
 import img8 from '../../assets/images/pool_fountain.jpg';
 import Carousel from '../../components/Carousel';
-import '../../assets/scss/services.scss';
+import '../../assets/css/services.css';
 
 function Pools() {
+    useEffect(() => {
+        window.scrollTo(0,0)
+    }, [])
     return (
         <div className="service-page">
             <h1 className="service-header">

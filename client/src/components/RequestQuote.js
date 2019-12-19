@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import '../assets/scss/quote.scss';
+import '../assets/css/quote.css';
 
 function RequestQuote() {
     let [ name, setName ] = useState("");
@@ -13,7 +13,7 @@ function RequestQuote() {
         e.preventDefault();
         axios({
             method: "POST",
-            url: "http://localhost:3100/send",
+            url: "/send",
             data: {
                 name: name,
                 phone: phone,

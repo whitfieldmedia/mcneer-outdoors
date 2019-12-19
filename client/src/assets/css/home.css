@@ -531,6 +531,26 @@
     font-size: 25px;
     max-width: 97%;
   }
+
+  .home-testimonial-section {
+    padding-bottom: 25px;
+  }
+
+  .home-testimonial-name {
+    max-width: 230px;
+  }
+
+  #right-testimonial-arrow {
+    position: absolute;
+    bottom: 30px;
+    right: 10px;
+  }
+
+  #left-testimonial-arrow {
+    position: absolute;
+    bottom: 30px;
+    left: 10px;
+  }
 }
 
 /*# sourceMappingURL=home.css.map */

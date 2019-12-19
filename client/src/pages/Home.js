@@ -12,8 +12,9 @@ import firepit from '../assets/images/firepit.jpg';
 import lawnCare from '../assets/images/professional_lawn_care.jpg';
 import Facebook from '../components/Facebook';
 import concrete2 from '../assets/images/stone_path2.jpg';
+import sod from '../assets/images/sod.jpg';
 import { Link } from 'react-router-dom';
-import '../assets/scss/home.scss';
+import '../assets/css/home.css';
 
 function Home() {
     let [ count, setCount ] = useState(0);
@@ -46,6 +47,9 @@ function Home() {
             setCount(0)
         }
     }
+    useEffect(() => {
+        window.scrollTo(0,0)
+    }, [])
     useEffect(() => {
         var current = count;
         const interval = setInterval(() => {
@@ -227,7 +231,7 @@ function Home() {
                         <h3 className="home-header3">
                             Sod & Hydroseeding
                         </h3>
-                        <img src={landscaping} className="home-image" alt=""/>
+                        <img src={sod} className="home-image" alt=""/>
                     </Link> 
                     <Link to="/pergola" className="home-service-container">
                         <h3 className="home-header3">

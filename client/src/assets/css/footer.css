@@ -9,6 +9,21 @@ footer {
   background-color: #3F403F;
 }
 
+.footer-logo-holder {
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-logo {
+  width: 300px;
+  height: auto;
+  position: relative;
+  padding: 20px 0;
+}
+
 .footer-row {
   display: flex;
   flex-flow: row wrap;
@@ -25,9 +40,38 @@ footer {
 
 .footer-credits {
   font-family: "Open Sans", sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   color: #F5F5F5;
   text-align: center;
+}
+
+@media only screen and (max-width: 870px) {
+  .footer-text {
+    margin: 0;
+    font-size: 18px;
+  }
+
+  .footer-credits {
+    font-size: 13px;
+  }
+
+  .footer-logo {
+    width: 250px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .footer-logo {
+    width: 50%;
+    min-width: 200px;
+  }
+
+  .footer-credits {
+    font-size: 12px;
+  }
+
+  .footer-test {
+    font-size: 16px;
+  }
 }
 
 /*# sourceMappingURL=footer.css.map */

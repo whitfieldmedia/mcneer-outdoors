@@ -1,12 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import img from '../../assets/images/landscape_lighting_around_pool.jpg';
 import img2 from '../../assets/images/landscape_lights.jpg';
 import img3 from '../../assets/images/landscape_lighting.jpg'
 import img4 from '../../assets/images/lighting.png'
 import Carousel from '../../components/Carousel';
-import '../../assets/scss/services.scss';
+import '../../assets/css/services.css';
 
 function LandscapeLighting() {
+    useEffect(() => {
+        window.scrollTo(0,0)
+    }, [])
     return (
         <div className="service-page">
             <h1 className="service-header">

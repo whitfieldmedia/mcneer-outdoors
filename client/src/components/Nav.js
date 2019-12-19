@@ -1,6 +1,6 @@
 import React, { useReducer } from 'react';
 import { Link } from 'react-router-dom';
-import '../assets/scss/nav.scss';
+import '../assets/css/nav.css';
 
 const initialState = { 
     isToggled: false,
@@ -84,7 +84,7 @@ function Nav() {
                             </Link>
                         </div>
                         <div className="dropdown-link-holder">
-                            <Link onClick={handleClick()} to="/lawn-gardening" className="dropdown-link">
+                            <Link onClick={handleClick()} to="/gardening" className="dropdown-link">
                                 Gardening
                             </Link>
                         </div>
