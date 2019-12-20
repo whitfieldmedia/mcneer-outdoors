@@ -37,7 +37,7 @@ function Landscaping() {
                 </p>
             </div>
             <div className="service-main-section">
-                <Link className="service-type-container">
+                <Link to="/professional-lawn-care" className="service-type-container">
                     <h3 className="service-type-header">
                         Professional Lawn Care
                     </h3>

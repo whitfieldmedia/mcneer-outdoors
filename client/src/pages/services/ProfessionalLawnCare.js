@@ -48,7 +48,7 @@ function ProfessionalLawnCare() {
                         </Link>
                     </li>
                     <li className="service-list-item">
-                        <Link className="service-list-link" to="/lawn-gardening">
+                        <Link className="service-list-link" to="/gardening">
                             Gardening
                         </Link>
                     </li>

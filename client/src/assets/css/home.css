@@ -442,6 +442,7 @@
 
   .home-testimonial-par {
     font-size: 16px;
+    max-width: 90%;
   }
 
   #left-testimonial-arrow {
@@ -471,11 +472,6 @@
   .home-header2 {
     font-size: 30px;
     max-width: 90%;
-  }
-
-  .carousel-learn-more {
-    width: 125px;
-    height: 30px;
   }
 
   .carousel-button {
