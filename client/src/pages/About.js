@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import RequestQuote from '../components/RequestQuote';
+import { Helmet } from 'react-helmet';
 import '../assets/css/about.css';
 
 function About() {
@@ -8,6 +9,16 @@ function About() {
     }, [])
     return (
         <div className="about-page">
+            <Helmet>
+                <title> 
+                    About McNeer Outdoors Professional Lawn Care
+                </title>
+                <link rel="canonical" 
+                    href="https://www.mcneeroutdoors/com/about-us" />
+                <meta name="description" 
+                    content="McNeer Outdoors Professional Lawn Care work hard so you can spend time outside and enjoy all that nature has provided.  With years of experience in the Mississippi Delta we can help you with any service you need.  We are truly a full service one stop shop for your outdoor landscaping needs." 
+                    />
+            </Helmet>
             <div className="about-top-container"></div>
             <div className="about-row">
                 <div className="about-main-column">

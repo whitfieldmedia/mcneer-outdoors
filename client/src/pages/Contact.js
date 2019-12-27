@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Facebook from '../components/Facebook';
+import { Helmet } from 'react-helmet';
 import '../assets/css/contact.css';
 
 function Contact() {
@@ -26,6 +27,16 @@ function Contact() {
     }, [])
     return (
         <div className="contact-page">
+            <Helmet>
+                <title> 
+                    Contact | McNeer Outdoors Professional Lawn Care
+                </title>
+                <link rel="canonical" 
+                    href="https://www.mcneeroutdoors/com/contact-us" />
+                <meta name="description" 
+                    content="If you have any questions give us a call at (662) 719-5306 or shoot an email to phil@mcneeroutdoors.com.  We offer free onsite inspections and McNeer Outdoors Professional Lawn Care is a name you can trust." 
+                    />
+            </Helmet>
             <div className="contact-section">
                 <h1 className="contact-header">
                     Contact Us

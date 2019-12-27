@@ -10,6 +10,7 @@ import img8 from '../../assets/images/pool_fountain.jpg';
 import img9 from '../../assets/images/pool_fire.png';
 import img10 from '../../assets/images/pool_lighting.png';
 import Carousel from '../../components/Carousel';
+import { Helmet } from 'react-helmet';
 import '../../assets/css/services.css';
 
 function Pools() {
@@ -18,6 +19,16 @@ function Pools() {
     }, [])
     return (
         <div className="service-page">
+            <Helmet>
+                <title> 
+                    Pool & Hot Tub Installation & Repairs | McNeer Outdoors 
+                </title>
+                <link rel="canonical" 
+                    href="https://www.mcneeroutdoors/com/pools" />
+                <meta name="description" 
+                    content="Mississippi summers are hot!  It's time to escape the heat and start enjoying time outside in the summer with a pool!  McNeer Outdoors installs and repairs in-ground hot tubs and pools.  We design it how you want it and can help you get the pool of your dreams." 
+                    />
+            </Helmet>
             <h1 className="service-header">
                 Pools
             </h1>

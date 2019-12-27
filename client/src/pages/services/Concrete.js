@@ -6,6 +6,7 @@ import img4 from '../../assets/images/stone_path.jpg';
 import img5 from '../../assets/images/concrete3.jpg';
 import img6 from '../../assets/images/stone_path2.jpg';
 import Carousel from '../../components/Carousel';
+import { Helmet } from 'react-helmet';
 import '../../assets/css/services.css';
 
 function Concrete() {
@@ -14,6 +15,16 @@ function Concrete() {
     }, [])
     return (
         <div className="service-page">
+            <Helmet>
+                <title> 
+                    Concrete & Stone Installation & Repair | McNeer Outdoors 
+                </title>
+                <link rel="canonical" 
+                    href="https://www.mcneeroutdoors/com/concrete" />
+                <meta name="description" 
+                    content="McNeer Outdoors has a specialized concrete crew to repair or install any pathway, sidewalk, driveway, curbs, gutters, and/or patios.  If you need stonework or specialized concrete work, McNeer Outdoors can install or repair anything you need." 
+                    />
+            </Helmet>
             <h1 className="service-header">
                     Concrete & Stone 
             </h1>

@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import background from '../../assets/images/lawn_care_sprinklers.jpg';
+import { Helmet } from 'react-helmet';
 import '../../assets/css/services.css';
 
 function Sprinklers() {
@@ -8,6 +9,16 @@ function Sprinklers() {
     }, [])
     return (
         <div className="service-page">
+            <Helmet>
+                <title> 
+                    Sprinklers | McNeer Outdoors Professional Lawn Care
+                </title>
+                <link rel="canonical" 
+                    href="https://www.mcneeroutdoors/com/sprinklers" />
+                <meta name="description" 
+                    content="McNeer Outdoors Professional Lawn Care offers a variety of irrigation & sprinkler system services. We utilize computerized system design to make it as efficient as possible,  quality parts from Rain Bird Corporation and free onsite inspections.  We also offer repair and winterizing for your existing sprinkler system." 
+                    />
+            </Helmet>
             <div className="service-top-section">
                 <img src={background} className="service-top-img" alt=""/>
             </div>

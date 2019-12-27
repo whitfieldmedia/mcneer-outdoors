@@ -11,6 +11,7 @@ import lawnCare from '../../assets/images/garden_green_grass.jpg';
 import mosquitoControl from '../../assets/images/mosquito-control.png';
 import sprinklers from '../../assets/images/lawn_care_sprinklers.jpg';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 import '../../assets/css/services.css';
 
 function Landscaping() {
@@ -19,6 +20,16 @@ function Landscaping() {
     }, [])
     return (
         <div className="service-page">
+            <Helmet>
+                <title> 
+                    Landscaping | McNeer Outdoors 
+                </title>
+                <link rel="canonical" 
+                    href="https://www.mcneeroutdoors/com/landscaping" />
+                <meta name="description" 
+                    content="McNeer Outdoors Professional Lawn Care has a wide range of landscaping services whether you're looking for a commercial property to be maintained to a residential property.  With years of experience in the Delta McNeer Outdoors Professional Lawn Care can make your property look great." 
+                    />
+            </Helmet>
             <h1 className="service-header">
                 Landscaping
             </h1>

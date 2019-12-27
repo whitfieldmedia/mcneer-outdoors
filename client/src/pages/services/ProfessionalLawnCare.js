@@ -4,6 +4,7 @@ import img2 from '../../assets/images/landscape3.jpg'
 import img3 from '../../assets/images/landscape.jpg';
 import Carousel from '../../components/Carousel';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 import '../../assets/css/services.css';
 
 function ProfessionalLawnCare() {
@@ -12,6 +13,16 @@ function ProfessionalLawnCare() {
     }, [])
     return (
         <div className="service-page">
+            <Helmet>
+                <title> 
+                    Professional lawn Care | McNeer Outdoors 
+                </title>
+                <link rel="canonical" 
+                    href="https://www.mcneeroutdoors/com/professional-lawn-care" />
+                <meta name="description" 
+                    content="McNeer Outdoors Professional Lawn Care will give your lawn the care it needs to maximize its potential and make your property look great.  We handle residential and commercial lawn care." 
+                    />
+            </Helmet>
             <h1 className="service-header">
                 Professional Lawn Care
             </h1>

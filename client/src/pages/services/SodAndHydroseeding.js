@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import background from '../../assets/images/sod.jpg'
+import { Helmet } from 'react-helmet';
 import '../../assets/css/services.css';
 
 function SodAndHydroseeding() {
@@ -8,6 +9,16 @@ function SodAndHydroseeding() {
     }, [])
     return (
         <div className="service-page">
+            <Helmet>
+                <title> 
+                    Sod & Hydroseeding | McNeer Outdoors 
+                </title>
+                <link rel="canonical" 
+                    href="https://www.mcneeroutdoors/com/sod-and-hydroseeding" />
+                <meta name="description" 
+                    content="McNeer Outdoors can help you find what your lawn needs.  It can be difficult to maintain a lush green landscape in the Delta.  That's why we offer sod and hydroseeding options that will help your lawn come to life on any lifestyle and budget." 
+                    />
+            </Helmet>
             <div className="service-top-section">
                 <img src={background} className="service-top-img" alt=""/>
             </div>

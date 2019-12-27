@@ -4,6 +4,7 @@ import img2 from '../../assets/images/landscape_lights.jpg';
 import img3 from '../../assets/images/landscape_lighting.jpg'
 import img4 from '../../assets/images/lighting.png'
 import Carousel from '../../components/Carousel';
+import { Helmet } from 'react-helmet';
 import '../../assets/css/services.css';
 
 function LandscapeLighting() {
@@ -12,6 +13,16 @@ function LandscapeLighting() {
     }, [])
     return (
         <div className="service-page">
+            <Helmet>
+                <title> 
+                    Landscape Lighting | McNeer Outdoors 
+                </title>
+                <link rel="canonical" 
+                    href="https://www.mcneeroutdoors/com/landscape-lighting" />
+                <meta name="description" 
+                    content="If you are interested in adding a special touch to your property to make it look great,  landscape lighting can really brighten up your yard and when done properly add that special touch you're looking for.  McNeer Outdoors has lots of experience and will give you the look you're looking for." 
+                    />
+            </Helmet>
             <h1 className="service-header">
                 Landscape Lighting
             </h1>
