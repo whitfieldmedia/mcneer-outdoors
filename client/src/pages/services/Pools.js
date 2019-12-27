@@ -7,6 +7,8 @@ import img5 from '../../assets/images/pool6.jpg';
 import img6 from '../../assets/images/pool_waterfalls.jpg';
 import img7 from '../../assets/images/pool_and_hotub.jpg';
 import img8 from '../../assets/images/pool_fountain.jpg';
+import img9 from '../../assets/images/pool_fire.png';
+import img10 from '../../assets/images/pool_lighting.png';
 import Carousel from '../../components/Carousel';
 import '../../assets/css/services.css';
 
@@ -22,6 +24,8 @@ function Pools() {
             <div className="service-carousel-container">
                 <Carousel 
                     images={[
+                        img9,
+                        img10,
                         img,
                         img2,
                         img3,
