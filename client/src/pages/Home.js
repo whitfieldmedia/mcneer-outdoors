@@ -1,18 +1,44 @@
 import React, { useState, useEffect } from 'react';
 import pool from '../assets/images/pool.png';
+import poolWebP from '../assets/images/WebPFiles/pool.webp';
+import poolJp2 from '../assets/images/JP2Files/pool.jp2';
 import sprinkler from '../assets/images/spinklers.jpg';
+import sprinklerWebP from '../assets/images/WebPFiles/spinklers.webp';
+import sprinklerJp2 from '../assets/images/JP2Files/spinklers.jp2';
 import landscaping from '../assets/images/landscape_design.jpg';
+import landscapingWebP from '../assets/images/WebPFiles/landscape_design.webp';
+import landscapingJp2 from '../assets/images/JP2Files/landscape_design.jp2';
 import concrete from '../assets/images/concrete.jpg';
+import concreteWebP from '../assets/images/WebPFiles/concrete.webp';
+import concreteJp2 from '../assets/images/JP2Files/concrete.jp2';
 import lighting from '../assets/images/landscape_lighting.jpg';
+import lightingWebP from '../assets/images/WebPFiles/landscape_lighting.webp';
+import lightingJp2 from '../assets/images/JP2Files/landscape_lighting.jp2';
 import gutter from '../assets/images/gutters4.jpg';
+import gutterWebP from '../assets/images/WebPFiles/gutters4.webp';
+import gutterJp2 from '../assets/images/JP2Files/gutters4.jp2';
 import mosquitoControl from '../assets/images/mosquito-control.png';
+import mosquitoControlWebP from '../assets/images/WebPFiles/mosquito-control.webp';
+import mosquitoControlJp2 from '../assets/images/JP2Files/mosquito-control.jp2';
 import outdoorKitchen from '../assets/images/outdoor_kitchen2.jpg';
+import outdoorKitchenWebP from '../assets/images/WebPFiles/outdoor_kitchen2.webp';
+import outdoorKitchenJp2 from '../assets/images/JP2Files/outdoor_kitchen2.jp2';
 import pergola from '../assets/images/swing_pergola.jpg';
+import pergolaWebP from '../assets/images/WebPFiles/swing_pergola.webp';
+import pergolaJp2 from '../assets/images/JP2Files/swing_pergola.jp2';
 import firepit from '../assets/images/firepit.jpg';
+import firepitWebP from '../assets/images/WebPFiles/firepit.webp';
+import firepitJp2 from '../assets/images/JP2Files/firepit.jp2';
 import lawnCare from '../assets/images/professional_lawn_care.jpg';
+import lawnCareWebP from '../assets/images/WebPFiles/professional_lawn_care.webp';
+import lawnCareJp2 from '../assets/images/JP2Files/professional_lawn_care.jp2';
 import Facebook from '../components/Facebook';
 import concrete2 from '../assets/images/stone_path2.jpg';
+import concrete2WebP from '../assets/images/WebPFiles/stone_path2.webp';
+import concrete2Jp2 from '../assets/images/JP2Files/stone_path2.jp2';
 import sod from '../assets/images/sod.jpg';
+import sodWebP from '../assets/images/WebPFiles/sod.webp';
+import sodJp2 from '../assets/images/JP2Files/sod.jp2';
 import { Link } from 'react-router-dom';
 import '../assets/css/home.css';
 
@@ -76,7 +102,11 @@ function Home() {
                             Learn More
                         </button>
                     </Link>
-                    <img src={lawnCare} className="home-carousel-img" alt="Professional Lawn Care"/>
+                    <picture className="home-carousel-img">
+                        <source type="image/webp" srcSet={lawnCareWebP} />
+                        <source type="image/jp2" srcSet={lawnCareJp2} />
+                        <img src={lawnCare} alt="Professional Lawn Care" />
+                    </picture>
                 </div>
                 <div className={(count === 1) ? "carousel-slide-container active" : "carousel-slide-container"} id="slide1">
                     <h2 className="home-header2">
@@ -90,7 +120,11 @@ function Home() {
                             Learn More
                         </button>
                     </Link>
-                    <img src={mosquitoControl} className="home-carousel-img" alt="Mosquito Mist Control"/>
+                    <picture className="home-carousel-img">
+                        <source type="image/webp" srcSet={mosquitoControlWebP} />
+                        <source type="image/jp2" srcSet={mosquitoControlJp2} />
+                        <img src={mosquitoControl} alt="McNeer Outdoors Mosquito Mist Control"/>
+                    </picture>
                 </div>
                 <div className={(count === 2) ? "carousel-slide-container active" : "carousel-slide-container"} id="slide2">
                     <h2 className="home-header2"> 
@@ -104,7 +138,11 @@ function Home() {
                             Learn More
                         </button>
                     </Link>
-                    <img src={pool} className="home-carousel-img" alt="Pool Installation"/>
+                    <picture className="home-carousel-img">
+                        <source type="image/webp" srcSet={poolWebP} />
+                        <source type="image/jp2" srcSet={poolJp2} />
+                        <img src={pool} alt="McNeer Outdoors Pool Installation & Repair"/>
+                    </picture>
                 </div>
                 <div className={(count === 3) ? "carousel-slide-container active" : "carousel-slide-container"} id="slide3">
                     <h2 className="home-header2"> 
@@ -118,7 +156,11 @@ function Home() {
                             Learn More
                         </button>
                     </Link>
-                    <img src={landscaping} className="home-carousel-img" alt="Landscaping services"/>
+                    <picture className="home-carousel-img">
+                        <source type="image/webp" srcSet={landscapingWebP} />
+                        <source type="image/jp2" srcSet={landscapingJp2} />
+                        <img src={landscaping} alt="McNeer Outdoors Landscaping Design & Services"/>
+                    </picture>
                 </div>
                 <div className={(count === 4) ? "carousel-slide-container active" : "carousel-slide-container"} id="slide4">
                     <h2 className="home-header2"> 
@@ -132,7 +174,11 @@ function Home() {
                             Learn More
                         </button>
                     </Link>
-                    <img src={concrete} className="home-carousel-img" alt="Concrete installation and repair"/>
+                    <picture className="home-carousel-img">
+                        <source type="image/webp" srcSet={concreteWebP} />
+                        <source type="image/jp2" srcSet={concreteJp2} />
+                        <img src={concrete} alt="McNeer Outdoors Concrete/Stone Installation & Repair"/>
+                    </picture>
                 </div>
                 <div className={(count === 5) ? "carousel-slide-container active" : "carousel-slide-container"} id="slide5">
                     <h2 className="home-header2">
@@ -146,7 +192,11 @@ function Home() {
                             Learn More
                         </button>
                     </Link>
-                    <img src={sprinkler} className="home-carousel-img" id="img2" alt="Sprinkler installation and repair" />
+                    <picture className="home-carousel-img">
+                        <source type="image/webp" srcSet={sprinklerWebP} />
+                        <source type="image/jp2" srcSet={sprinklerJp2} />
+                        <img src={sprinkler} alt="McNeer Outdoor Sprinkler Installation Repair & Service"/>
+                    </picture>
                 </div>
                 <div className={(count === 6) ? "carousel-slide-container active" : "carousel-slide-container"} id="slide6">
                     <h2 className="home-header2">
@@ -160,7 +210,11 @@ function Home() {
                             Learn More
                         </button>
                     </Link>
-                    <img src={lighting} className="home-carousel-img" id="img" alt="Landscaping lights installation"/>
+                    <picture className="home-carousel-img">
+                        <source type="image/webp" srcSet={lightingWebP} />
+                        <source type="image/jp2" srcSet={lightingJp2} />
+                        <img src={lighting} alt="McNeer Outdoor Landscape Lights Installation & Repair"/>
+                    </picture>
                 </div>
                 <div className={(count === 7) ? "carousel-slide-container active" : "carousel-slide-container"} id="slide7">
                     <h2 className="home-header2">
@@ -174,7 +228,11 @@ function Home() {
                             Learn More
                         </button>
                     </Link>
-                    <img src={gutter} className="home-carousel-img" id="img" alt="Seamless Gutter installation & repair"/>
+                    <picture className="home-carousel-img">
+                        <source type="image/webp" srcSet={gutterWebP} />
+                        <source type="image/jp2" srcSet={gutterJp2} />
+                        <img src={gutter} alt="Seamless Gutter Installation & Repair"/>
+                    </picture>
                 </div>
                 <i onClick={handlePrev} id="left-arrow" className="fas fa-arrow-circle-left"></i>
                 <i onClick={handleNext} id="right-arrow" className="fas fa-arrow-circle-right"></i>
@@ -201,7 +259,11 @@ function Home() {
                         <button className="home-service-button">
                             Learn More
                         </button>
-                        <img src={lawnCare} className="home-image" alt="Professional Lawn Care"/>
+                        <picture className="home-image">
+                            <source type="image/webp" srcSet={lawnCareWebP} />
+                            <source type="image/jp2" srcSet={lawnCareJp2} />
+                            <img src={lawnCare} alt="Professional Lawn Care"/>
+                        </picture>
                     </Link>
                     <Link to="/mosquito-control" className="home-service-container">
                         <h3 className="home-header3">
@@ -210,7 +272,11 @@ function Home() {
                         <button className="home-service-button">
                             Learn More
                         </button>
-                        <img src={mosquitoControl} className="home-image" alt=""/>
+                        <picture className="home-image">
+                            <source type="image/webp" srcSet={mosquitoControlWebP} />
+                            <source type="image/jp2" srcSet={mosquitoControlJp2} />
+                            <img src={mosquitoControl} alt="McNeer Outdoors Mosquito Mist Control"/>
+                        </picture>
                     </Link> 
                     <Link to="/outdoor-kitchens" className="home-service-container">
                         <h3 className="home-header3">
@@ -219,61 +285,101 @@ function Home() {
                         <button className="home-service-button">
                             Learn More
                         </button>
-                        <img src={outdoorKitchen} className="home-image" alt=""/>
+                        <picture className="home-image">
+                            <source type="image/webp" srcSet={outdoorKitchenWebP} />
+                            <source type="image/jp2" srcSet={outdoorKitchenJp2} />
+                            <img src={outdoorKitchen} alt="McNeer Outdoors Outdoor Kitchen Installations"/>
+                        </picture>
                     </Link> 
                     <Link to="/fire-pits" className="home-service-container">
                         <h3 className="home-header3">
                             Fire Pits
                         </h3>
-                        <img src={firepit} className="home-image" alt=""/>
+                        <picture className="home-image">
+                            <source type="image/webp" srcSet={firepitWebP} />
+                            <source type="image/jp2" srcSet={firepitJp2} />
+                            <img src={firepit} alt="Outdoor Fire Pit & Place Installation"/>
+                        </picture>
                     </Link> 
                     <Link to="/sod-and-hydroseeding" className="home-service-container">
                         <h3 className="home-header3">
                             Sod & Hydroseeding
                         </h3>
-                        <img src={sod} className="home-image" alt=""/>
+                        <picture className="home-image">
+                            <source type="image/webp" srcSet={sodWebP} />
+                            <source type="image/jp2" srcSet={sodJp2} />
+                            <img src={sod} alt="Sod & Hydroseeding Lawn Care"/>
+                        </picture>
                     </Link> 
                     <Link to="/pergola" className="home-service-container">
                         <h3 className="home-header3">
                             Pergola's
                         </h3>
-                        <img src={pergola} className="home-image" alt=""/>
+                        <picture className="home-image">
+                            <source type="image/webp" srcSet={pergolaWebP} />
+                            <source type="image/jp2" srcSet={pergolaJp2} />
+                            <img src={pergola} alt="Pergola Installation"/>
+                        </picture>
                     </Link> 
                     <Link to="/sprinklers" className="home-service-container">
                         <h3 className="home-header3"> 
                             Sprinklers 
                         </h3>
-                        <img src={sprinkler} className="home-image" alt="Lawn Sprinkler Systems"/>
+                        <picture className="home-image">
+                            <source type="image/webp" srcSet={sprinklerWebP} />
+                            <source type="image/jp2" srcSet={sprinklerJp2} />
+                            <img src={sprinkler} alt="Lawn Sprinkler & Irrigation Systems Installation and Service"/>
+                        </picture>
                     </Link>
                     <Link to="/landscaping" className="home-service-container">
                         <h3 className="home-header3"> 
                             Landscaping 
                         </h3>
-                        <img src={landscaping} className="home-image" alt="Landscaping"/>
+                        <picture className="home-image">
+                            <source type="image/webp" srcSet={landscapingWebP} />
+                            <source type="image/jp2" srcSet={landscapingJp2} />
+                            <img src={landscaping} alt="McNeer Outdoors Landscaping Design and Services"/>
+                        </picture>
                     </Link>
                     <Link to="/concrete" className="home-service-container">
                         <h3 className="home-header3"> 
                             Concrete 
                         </h3>
-                        <img src={concrete2} className="home-image" alt="Stamped, Scored and Acid Stained Concrete"/>
+                        <picture className="home-image">
+                            <source type="image/webp" srcSet={concrete2WebP} />
+                            <source type="image/jp2" srcSet={concrete2Jp2} />
+                            <img src={concrete2} alt="Stamped, Scored and Acid Stained Concrete and stone installation and repair."/>
+                        </picture>
                     </Link>
                     <Link to="/seamless-gutters" className="home-service-container">
                         <h3 className="home-header3"> 
                             Seamless Gutters 
                         </h3>
-                        <img src={gutter} className="home-image" alt="Seamless Gutter Installation"/>
+                        <picture className="home-image">
+                            <source type="image/webp" srcSet={gutterWebP} />
+                            <source type="image/jp2" srcSet={gutterJp2} />
+                            <img src={gutter} alt="Seamless Gutter Installation & Repair"/>
+                        </picture>
                     </Link>
                     <Link to="/landscape-lighting" className="home-service-container">
                         <h3 className="home-header3">
                             Landscape Lighting
                         </h3>
-                        <img src={lighting} className="home-image" alt="Landscape Lighting Installation"/>
+                        <picture className="home-image">
+                            <source type="image/webp" srcSet={lightingWebP} />
+                            <source type="image/jp2" srcSet={lightingJp2} />
+                            <img src={lighting} alt="Landscape Lighting Installation"/>
+                        </picture>
                     </Link>
                     <Link to="/pools" className="home-service-container">
                         <h3 className="home-header3"> 
                             Pools & Hot Tubs
                         </h3>
-                        <img src={pool} className="home-image" alt="Pools"/>
+                        <picture className="home-image">
+                            <source type="image/webp" srcSet={poolWebP} />
+                            <source type="image/jp2" srcSet={poolJp2} />
+                            <img src={pool} alt="In-Ground Pool and Hot Tub Installation & Repair"/>
+                        </picture>
                     </Link>
                 </div>
             </section>

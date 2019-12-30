@@ -16,11 +16,28 @@ footer {
     justify-content: center;
     align-items: center;
 }
+.footer-logo-inner {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .footer-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    align-self: center;
     width: 300px;
+    max-width: 300px;
     height: auto;
     position: relative;
     padding: 20px 0;
+    object-position: center;
+    object-fit: contain;
+    -o-object-fit: contain;
+    -o-object-position: center;
 }
 .footer-row {
     display: flex;

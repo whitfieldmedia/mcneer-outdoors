@@ -46,9 +46,6 @@ function Carousel(props) {
             </div>
             <div className="service-thumbnail-container">
                 {showThumbnails()}
-                {/* {props.images.map(image => (
-                    <img src={image} key={image} onClick={() => handleClick(image)} className={(props.images[count] === image) ?"service-thumbnail-img-active" : "service-thumbnail-img"} alt="McNeer Outdoors recent work" />
-                ))} */}
             </div>
         </div>
 
