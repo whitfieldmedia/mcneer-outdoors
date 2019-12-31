@@ -36,7 +36,6 @@ function Carousel(props) {
             <img src={image} key={image} onClick={() => handleClick(image)} className={(props.images[count] === image) ? "service-thumbnail-img-active" : "service-thumbnail-img"} alt="McNeer Outdoor's Work" />
         ))
     }
-    console.log(props)
     return (
         <div className="service-carousel-component">
             <div className="service-carousel">

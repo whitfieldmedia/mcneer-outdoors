@@ -354,12 +354,61 @@
   .servicer-type-header {
     border-top: 1px solid #7E807F;
   }
+
+  .service-list-item {
+    padding: 5px;
+  }
+
+  .service-list-wrapper {
+    max-width: 100%;
+  }
 }
 @media only screen and (max-width: 425px) {
   .service-list-wrapper {
     flex-flow: column;
     justify-content: flex-start;
     align-items: flex-start;
+    width: 100%;
+  }
+}
+.pool-video-container {
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pool-video {
+  width: 100vw;
+  height: calc(100vh - 80px);
+}
+
+.pool-header {
+  font-family: "Playfair Display", serif;
+  color: #2D3A34;
+  font-size: 40px;
+  font-weight: 700;
+  margin: 0;
+  padding: 25px 0 0 0;
+}
+
+.pool-section {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0;
+  margin: 0;
+  max-width: 90%;
+  width: auto;
+}
+
+@media only screen and (max-width: 445px) {
+  .pool-video {
+    height: 180vw;
   }
 }
 
