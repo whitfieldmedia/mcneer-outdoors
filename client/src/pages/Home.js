@@ -115,7 +115,7 @@ function Home() {
                     <p className="home-carousel-text">
                         Keep those pesky bugs off your property so you can enjoy spending time outside.  Works on all bugs including mosquitos, gnats, flys, wasps, and spiders. 
                     </p>
-                    <Link to="/mosquito-mist-control" className="carousel-learn-more">
+                    <Link to="/mosquito-control" className="carousel-learn-more">
                         <button className="carousel-button">
                             Learn More
                         </button>
