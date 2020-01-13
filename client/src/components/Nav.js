@@ -70,6 +70,11 @@ function Nav() {
                         About
                     </Link>
                 </div>
+                <div className="nav-link-holder">
+                    <Link onClick={handleClick()} to="/financing" className="nav-link">
+                        Financing
+                    </Link>
+                </div>
                 <div onMouseLeave={handleMouseLeave()} onMouseEnter={handleMouseEnter()} className="dropdown">
                     <div className="dropbtn nav-link"> Services </div>
                     <div className={state.show ? "dropdown-content dropdown-content-show" : "dropdown-content dropdown-content-hide"}>

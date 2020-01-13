@@ -17,6 +17,7 @@ import Pergola from './pages/services/Pergola';
 import LawnGardening from './pages/services/LawnGardening';
 import Landscaping from './pages/services/Landscaping';
 import ProfessionalLawnCare from './pages/services/ProfessionalLawnCare';
+import Financing from './pages/Financing';
 import { Switch, Route } from 'react-router-dom';
 import './assets/css/styles.css';
 
@@ -42,6 +43,7 @@ class App extends React.Component {
                     <Route path="/gardening" component={LawnGardening} />
                     <Route path="/landscaping" component={Landscaping} />
                     <Route path="/professional-lawn-care" component={ProfessionalLawnCare} />
+                    <Route path="/financing" component={Financing} />
                 </Switch>
                 <Footer />
             </div>

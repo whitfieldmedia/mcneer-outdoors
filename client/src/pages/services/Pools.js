@@ -9,9 +9,13 @@ import img7 from '../../assets/images/pool_and_hotub.jpg';
 import img8 from '../../assets/images/pool_fountain.jpg';
 import img9 from '../../assets/images/pool_fire.png';
 import img10 from '../../assets/images/pool_lighting.png';
+import poly from '../../assets/images/poly_fibro.jpg';
+import polyW from '../../assets/images/WebPFiles/poly_fibro.webp';
+import aqua from '../../assets/images/aqua_bright.jpg';
+import aquaW from '../../assets/images/WebPFiles/aqua_bright.webp';
 import Carousel from '../../components/Carousel';
 import { Helmet } from 'react-helmet';
-import '../../assets/css/services.css';
+import '../../assets/scss/services.scss';
 
 function Pools() {
     useEffect(() => {
@@ -88,6 +92,24 @@ function Pools() {
                     </ul>
                 </div>
             </div>
+            <div className="pool-finish-container">
+                <h2 className="pool-finish-header">
+                    Pool Finishes
+                </h2>
+                <div className="pool-finish-holder">
+                    <picture>
+                        <source type="image/webp" srcSet={polyW} />
+                        <img src={poly} className="pool-finish" alt=""/>
+                    </picture>
+                    <picture>
+                        <source type="image/webp" srcSet={aquaW} />
+                        <img src={aqua} className="pool-finish" alt=""/>
+                    </picture>
+                </div>
+            </div>
+            <h2 className="pool-finish-header padding25">
+                Recent Work
+            </h2>
             <div className="service-carousel-container">
                 <Carousel 
                     images={[

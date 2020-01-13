@@ -19,23 +19,27 @@
     cursor: pointer;
 }
 .carousel-slide-container {
-    display: none;
+    display: flex;
+    flex-flow: column;
     width: 100vw;
     height: 80vh;
     justify-content: center;
     align-items: center;
     position: relative;
 }
-.active {
-    display: flex;
-    flex-flow: column;
-}
+.home-header {
+    z-index: 1;
+    font-family: $mono;
+    font-size: 40px;
+    color: $white;
+    font-weight: bold;
 
+}
 .home-header2 {
     z-index: 1;
     color: $white;
-    font-family: $mono;
-    font-size: 45px;
+    font-family: $serif;
+    font-size: 35px;
     font-weight: bold;
     padding: 10px 0;
     margin: 0;
@@ -46,7 +50,8 @@
     z-index: 0;
     width: 100vw;
     min-width: 100vw;
-    height: 80vh;
+    height: auto;
+    top: 0;
     min-height: 80vh;
     filter: brightness(40%);
     object-fit: cover;
@@ -58,6 +63,69 @@
         height: 100%;
     }
 }
+.home-carousel-text {
+    font-family: $sans;
+    font-size: 25px;
+    color: $white;
+    z-index: 1;
+    padding: 10px 0;
+    margin: 0;
+    max-width: 700px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.carousel-learn-more {
+    width: 200px;
+    height: 40px;
+    z-index: 1;
+    padding: 20px 0;
+    margin: 0;
+}
+.home-pool-logo {
+    z-index: 1;
+    width: 150px;
+    height: auto;
+    background: $white;
+    position: relative;
+}
+.home-carousel-row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    position: relative;
+    height: 50px;
+    margin: 40px 0;
+    picture {
+        background: $white;
+        height: 100%;
+        width: 150px;
+        margin: 0 15px;
+        padding: 10px 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 15px;
+    }
+}
+.carousel-button {
+    background-color: $green2;
+    color: $white;
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    border: 1px solid $white;
+}
+.carousel-button:hover {
+    transform: scale(1.05);
+    box-shadow: 1px 1px 2px $gray3;
+}
+
 
 .home-service-section {
     width: 100%;
@@ -172,39 +240,6 @@
 }
 #left-arrow:hover {
     color: $green2;
-}
-.home-carousel-text {
-    font-family: $sans;
-    font-size: 25px;
-    color: $white;
-    z-index: 1;
-    padding: 10px 0;
-    margin: 0;
-    max-width: 700px;
-    text-align: center;
-}
-
-.carousel-learn-more {
-    width: 200px;
-    height: 40px;
-    z-index: 1;
-    padding: 20px 0;
-    margin: 0;
-}
-.carousel-button {
-    background-color: $green2;
-    color: $white;
-    height: 100%;
-    width: 100%;
-    border-radius: 15px;
-    font-size: 20px;
-    border: none;
-    cursor: pointer;
-    border: 1px solid $white;
-}
-.carousel-button:hover {
-    transform: scale(1.05);
-    box-shadow: 1px 1px 2px $gray3;
 }
 
 .home-about-section {
@@ -326,7 +361,7 @@
 }
 
 @media only screen and (max-width: 1000px) {
-    .home-header2 {
+    .home-header {
         font-size: 35px;
     }
     .home-carousel-text {
@@ -417,6 +452,28 @@
     .home-service-container {
         width: 50%;
     }
+    .home-pool-logo {
+        width: 125px;
+    }
+    .home-carousel-row {
+        picture {
+            width: 125px;
+            margin: 0 10px;
+            padding: 8px 10px;
+        }
+    }
+    .home-carousel-img {
+        right: 0;
+        overflow: hidden;
+        object-position: right center;
+        -o-object-position: right center;
+        img {
+            height: 80vh;
+            width: auto;
+            position: absolute;
+            right: 0;
+        }
+    }
 }
 
 @media only screen and (max-width: 675px) {
@@ -434,6 +491,16 @@
         font-size: 24px;
         padding: 0 5px 0 10px;
     }
+    .home-pool-logo {
+        width: 100px;
+    }
+    .home-carousel-row {
+        picture {
+            width: 100px;
+            margin: 0 5px;
+        }
+    }
+
 }
  
 @media only screen and (max-width: 525px) {
@@ -448,7 +515,7 @@
         font-size: 18px;
         padding: 25px 0; 
     }
-    .home-header2 {
+    .home-header {
         font-size: 30px;
         max-width: 90%;
     }
@@ -460,6 +527,16 @@
     }
     .home-about-header {
         font-size: 25px;
+    }
+    .home-carousel-row {
+        width: 300px;
+        height: auto;
+        margin: 0;
+        padding: 0;
+        picture {
+            margin: 10px;
+            height: 50px;
+        }
     }
 }
 @media only screen and (max-width: 475px) {
@@ -476,7 +553,7 @@
 }
 
 @media only screen and (max-width: 450px) {
-    .home-header2 {
+    .home-header {
         font-size: 28px;
     }
     #left-arrow {
@@ -496,7 +573,7 @@
     #left-arrow {
         left: 35%;
     }
-    .home-header2 {
+    .home-header {
         font-size: 25px;
         max-width: 97%;
     }

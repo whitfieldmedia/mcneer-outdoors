@@ -1,0 +1,26 @@
+@import 'assets';
+
+.financing-page {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    min-height: 80vh;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.financing-cta-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.financing-cta {
+    width: 100%;
+    height: auto;
+}

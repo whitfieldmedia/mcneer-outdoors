@@ -37,7 +37,7 @@
   flex-flow: column;
   justify-content: center;
   align-items: center;
-  padding: 45px 0;
+  padding: 25px 0 0 0;
   margin: 0;
   max-width: 90%;
   width: auto;
@@ -178,6 +178,98 @@
   font-weight: bold;
 }
 
+.pool-video-container {
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.pool-video {
+  width: 100vw;
+  height: calc(100vh - 80px);
+}
+
+.pool-header {
+  font-family: "Playfair Display", serif;
+  color: #2D3A34;
+  font-size: 40px;
+  font-weight: 700;
+  margin: 0;
+  padding: 25px 0 0 0;
+}
+
+.pool-section {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0;
+  margin: 0;
+  max-width: 90%;
+  width: auto;
+}
+
+.pool-finish-container {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.pool-finish-header {
+  margin: 0;
+  padding: 0;
+  font-family: "Playfair Display", serif;
+  font-size: 35px;
+  color: #2D3A34;
+  font-weight: bold;
+}
+
+.pool-finish-row {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+}
+.pool-finish-row picture {
+  width: 300px;
+  height: 100px;
+  display: flex;
+  flex-flow: column;
+  margin: 10px;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+.pool-finish-holder {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.pool-finish {
+  margin: 25px;
+  width: auto;
+  height: auto;
+  max-width: 90vw;
+}
+
+.finish-logo {
+  width: 275px;
+  height: auto;
+}
+
+.padding25 {
+  padding: 25px 0;
+}
+
 @media only screen and (max-width: 1200px) {
   .service-type-img {
     width: 275px;
@@ -201,6 +293,10 @@
 @media only screen and (max-width: 1000px) {
   .service-header {
     font-size: 35px;
+  }
+
+  .pool-finish-header {
+    font-size: 30px;
   }
 }
 @media only screen and (max-width: 925px) {
@@ -249,6 +345,10 @@
 
   .service-list-item-big {
     font-size: 20px;
+  }
+
+  .pool-finish-header {
+    font-size: 25px;
   }
 }
 @media only screen and (max-width: 750px) {
@@ -329,6 +429,10 @@
   .service-list-item-big {
     font-size: 18px;
   }
+
+  .pool-finish-header {
+    font-size: 23px;
+  }
 }
 @media only screen and (max-width: 450px) {
   .service-main-section {
@@ -371,41 +475,6 @@
     width: 100%;
   }
 }
-.pool-video-container {
-  width: auto;
-  height: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.pool-video {
-  width: 100vw;
-  height: calc(100vh - 80px);
-}
-
-.pool-header {
-  font-family: "Playfair Display", serif;
-  color: #2D3A34;
-  font-size: 40px;
-  font-weight: 700;
-  margin: 0;
-  padding: 25px 0 0 0;
-}
-
-.pool-section {
-  width: auto;
-  height: auto;
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  align-items: center;
-  padding: 15px 0;
-  margin: 0;
-  max-width: 90%;
-  width: auto;
-}
-
 @media only screen and (max-width: 445px) {
   .pool-video {
     height: 180vw;
