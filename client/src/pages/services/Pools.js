@@ -15,6 +15,10 @@ import aqua from '../../assets/images/aqua_bright.jpg';
 import aquaW from '../../assets/images/WebPFiles/aqua_bright.webp';
 import movie from '../../assets/videos/video.mp4';
 import movieMobile from '../../assets/videos/mobile_pool_video.mp4';
+import img11 from '../../assets/images/pool_night_large.png';
+import img12 from '../../assets/images/pool_night_mobile.png';
+import img13 from '../../assets/images/pool_mobile.png';
+import img14 from '../../assets/images/pool_large.png';
 import Carousel from '../../components/Carousel';
 import { Helmet } from 'react-helmet';
 import '../../assets/scss/services.scss';
@@ -108,6 +112,10 @@ function Pools() {
             <div className="service-carousel-container">
                 <Carousel 
                     images={[
+                        img11,
+                        img12,
+                        img13,
+                        img14,
                         img9,
                         img10,
                         img,
