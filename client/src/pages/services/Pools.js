@@ -13,6 +13,8 @@ import poly from '../../assets/images/poly_fibro.jpg';
 import polyW from '../../assets/images/WebPFiles/poly_fibro.webp';
 import aqua from '../../assets/images/aqua_bright.jpg';
 import aquaW from '../../assets/images/WebPFiles/aqua_bright.webp';
+import movie from '../../assets/videos/video.mp4';
+import movieMobile from '../../assets/videos/mobile_pool_video.mp4';
 import Carousel from '../../components/Carousel';
 import { Helmet } from 'react-helmet';
 import '../../assets/scss/services.scss';
@@ -34,15 +36,8 @@ function Pools() {
                     />
             </Helmet>
             <div className="pool-video-container">
-                <iframe className="pool-video" 
-                    title="McNeer Outdoors Pool With Waterfall"
-                    src="https://player.vimeo.com/video/382211743?autoplay=1&loop=1" 
-                    width="640" 
-                    height="1138" 
-                    frameBorder="0" 
-                    allow="autoplay; fullscreen" 
-                    allowFullScreen>
-                </iframe>
+                <video src={movieMobile} className="pool-video-mobile" controls muted autoPlay loop></video>
+                <video src={movie} className="pool-video" controls muted autoPlay loop></video>
             </div>
             <h1 className="service-header">
                 Pools

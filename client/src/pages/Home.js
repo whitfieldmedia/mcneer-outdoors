@@ -1,6 +1,4 @@
 import React, { useState, useEffect } from 'react';
- import pool2 from '../assets/images/pool_with_waterfall.jpg';
- import pool2WebP from '../assets/images/WebPFiles/pool_with_waterfall.webp';
 import pool from '../assets/images/pool.png';
 import poolWebP from '../assets/images/WebPFiles/pool.webp';
 import sprinkler from '../assets/images/spinklers.jpg';
@@ -34,6 +32,8 @@ import ecoFinish from '../assets/images/eco_finish_logo.png';
 import ecoFinishW from '../assets/images/WebPFiles/eco_finish_logo.webp';
 import polyFibro from '../assets/images/poly_fibro_logo.png';
 import polyFibroW from '../assets/images/WebPFiles/poly_fibro_logo.webp';
+import movie from '../assets/videos/video.mp4';
+import movieMobile from '../assets/videos/mobile_pool_video.mp4';
 import { Link } from 'react-router-dom';
 import '../assets/scss/home.scss';
 
@@ -59,6 +59,7 @@ function Home() {
     return (
         <div className="home-page">
             <section className="home-carousel">
+                <div className="background-overlay"></div>
                 <div className="carousel-slide-container" id="slide2">
                     <h1 className="home-header">
                         McNeer Outdoors
@@ -66,7 +67,7 @@ function Home() {
                     <p className="home-carousel-text">
                         We specialize in pool & hot tub installation & repair.  We use high quality finishes to provide you with a pool you can enjoy for years to come! 
                     </p>
-                    <div className="home-carousel-row">
+                    <Link to="/pools" className="home-carousel-row">
                         <picture>
                             <source type="image/webp" srcSet={ecoDustrialW} />
                             <img src={ecoDustrial} className="home-pool-logo" alt="Eco Dustrial"/>
@@ -83,16 +84,9 @@ function Home() {
                             <source type="image/webp" srcSet={polyFibroW} />
                             <img src={polyFibro} className="home-pool-logo" alt="Poly Fibro Finish"/>
                         </picture>
-                    </div>
-                    <Link to="/pools" className="carousel-learn-more">
-                        <button className="carousel-button">
-                            Learn More
-                        </button>
                     </Link>
-                    <picture className="home-carousel-img">
-                        <source type="image/webp" srcSet={pool2WebP} />
-                        <img src={pool2} alt="McNeer Outdoors Pool Installation & Repair"/>
-                    </picture>
+                    <video src={movie} autoPlay muted loop className="home-background"></video>
+                    <video src={movieMobile} autoPlay muted loop className="home-background-mobile" ></video>
                 </div>
             </section>
             <section className="home-about-section">

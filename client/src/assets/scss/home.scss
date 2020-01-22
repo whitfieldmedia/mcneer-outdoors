@@ -18,14 +18,39 @@
     position: relative;
     cursor: pointer;
 }
+.background-overlay {
+    background: rgba(0,0,0,0.2);
+    z-index: 1;
+    position: absolute;
+    width: 100vw;
+    height: 80vh;
+}
+.home-background-mobile {
+    display: none;
+}
+.home-background {
+    width: 100vw;
+    height: auto;
+    display: block;
+    z-index: 0;
+    position: absolute;
+    top: 0;
+}
 .carousel-slide-container {
     display: flex;
     flex-flow: column;
     width: 100vw;
+    min-width: 100vw;
     height: 80vh;
     justify-content: center;
     align-items: center;
     position: relative;
+    source {
+        width: 100vw;
+        min-width: 100vw;
+        height: auto;
+        display: block;
+    }
 }
 .home-header {
     z-index: 1;
@@ -82,13 +107,7 @@
     padding: 20px 0;
     margin: 0;
 }
-.home-pool-logo {
-    z-index: 1;
-    width: 150px;
-    height: auto;
-    background: $white;
-    position: relative;
-}
+
 .home-carousel-row {
     display: flex;
     flex-flow: row wrap;
@@ -99,15 +118,22 @@
     height: 50px;
     margin: 40px 0;
     picture {
-        background: $white;
-        height: 100%;
+        height: 50px;
         width: 150px;
         margin: 0 15px;
         padding: 10px 12px;
+        background: $white;
         display: flex;
+        flex-flow: column;
         justify-content: center;
         align-items: center;
         border-radius: 15px;
+        .home-pool-logo {   
+            z-index: 1;
+            width: 100%;
+            height: auto;
+            display: block;
+        }
     }
 }
 .carousel-button {
@@ -359,7 +385,18 @@
         height: 200px;
     }
 }
-
+@media only screen and (max-width: 1150px) {
+    .home-carousel {
+        height: 56.25vw;
+        min-height: auto;
+    }
+    .background-overlay {
+        height: 56.25vw;
+    }
+    .carousel-slide-container {
+        height: 56.25vw;
+    }
+}
 @media only screen and (max-width: 1000px) {
     .home-header {
         font-size: 35px;
@@ -500,7 +537,26 @@
             margin: 0 5px;
         }
     }
-
+    .home-background-mobile {
+        display: block;
+        position: absolute;
+        height: auto;
+        width: 100vw;
+        z-index: 0;
+        top: 0;
+    }
+    .home-background {
+        display: none;
+    }
+    .home-carousel {
+        height: 150vw;
+    }
+    .background-overlay {
+        height: 150vw;
+    }
+    .carousel-slide-container {
+        height: 150vw;
+    }
 }
  
 @media only screen and (max-width: 525px) {
