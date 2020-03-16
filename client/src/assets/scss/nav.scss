@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Anton|Oswald:700&display=swap');
 .navbar {
     width: 100vw;
-    height: 80px;
+    height: 110px;
     background: $white;
     position: relative;
     top: 0;
@@ -91,43 +91,42 @@
 .toggle-menu {
     position: relative;
     margin: 15px;
-    height: 50px;
-    width: 50px;
+    height: 30px;
+    width: 30px;
 }
 
 .toggle-button {
     cursor: pointer;
-    position: absolute;
+    position: relative;
     z-index: 99;
     height: 100%;
     width: 100%;
     background: inherit;
     border: none;
     color: black;
-    top: 5px;
 }
 .line1 {
-    height: 5px;
+    height: 3px;
     width: 100%;
     background-color: black;   
     float: left;
-    position: relative;
+    position: absolute;
 }
 .line2 {
-    height: 5px;
+    height: 3px;
     width: 100%;
     background-color: black;  
-    position: relative;
+    position: absolute;
     float: left;
     margin-top: 8px;
 }
 .line3 {
-    height: 5px;
+    height: 3px;
     width: 100%;
     background-color: black;  
-    position: relative;
+    position: absolute;
     float: left;
-    margin-top: 8px;
+    margin-top: -8px;
 }
 .dropbtn {
     height: 80px;
@@ -141,15 +140,15 @@
 
 .checked {
     .line2 {
-        opacity: 0;
+        display: none;
     }
     .line1 {
-        transform: rotate(135deg);
-        margin-top: 10px;
+        transform: rotate(45deg);
+        margin-top: 0px;
     }
     .line3 {
-        transform: rotate(-135deg);
-        margin-top: -16px;
+        transform: rotate(-45deg);
+        margin-top: 0px;
     }
 }
 
@@ -169,7 +168,7 @@
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 80px;
+    top: 95px;
     z-index: 100;
     padding-top: 5px;
     transition: all 0.3s ease;
@@ -235,6 +234,14 @@
     .toggle-menu * {
         display: block;
     }
+    .toggle-menu {
+        min-height: 80px;
+        height: auto;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
     .nav-link-container-hidden {
         display: none;
     }
@@ -253,7 +260,7 @@
         justify-content: center;
         align-items: flex-end;
         height: auto;
-        min-height: 80px;
+        min-height: 110px;
     }
     .border-top {
         border-top: 1px solid black;
@@ -364,60 +371,56 @@
     }
 }
 
+@media only screen and (max-width: 500px) {
+    .nav-header {
+        font-size: 25px;
+        line-height: 25px;
+        margin: 0;
+        span {
+            font-size: 16px;
+            line-height: 16px;
+            margin: 0;
+        }
+    }
+    .navbar {
+        min-height: 60px;
+    }
+    .toggle-menu {
+        min-height: 60px;
+    }
+    .dropdown-link {
+        font-size: 16px;
+    }
+    .nav-link {
+        font-size: 16px;
+    }
+    .dropdown {
+        margin-top: 0;
+    }
+}
+
 @media only screen and (max-width: 463px) {
     .spacer {
-        height: 180px;
+        height: 140px;
     }
 }
 
 @media only screen and (max-width: 442px) {
     .spacer {
-        height: 210px;
+        height: 200px;
     }
 }
 
 @media only screen and (max-width: 425px) {
     .nav-header {
-        font-size: 25px;
+        font-size: 22px;
+        line-height: 22px;
         span {
-            font-size: 18px;
+            font-size: 15px;
+            line-height: 15px;
         }
     }
-    .toggle-menu {
-        height: 40px;
-        width: 40px;
-    }
-    .line1 {
-        height: 4px; 
-    }
-    .line2 {
-        height: 4px;
-    }
-    .line3 {
-        height: 4px;
-    }
 
-}
-
-@media only screen and (max-width: 375px) {
-    .toggle-menu {
-        height: 35px;
-        width: 35px;
-    }
-    .line1 {
-        height: 3.5px;
-    }
-    .line2 {
-        height: 3.5px;
-    }
-    .line3 {
-        height: 3.5px;
-    }
-    .checked {
-        .line3 {
-            margin-top: -13px;
-        }
-    }
 }
 
 @media only screen and (max-width: 374px) {
@@ -431,7 +434,7 @@
         flex-flow: column;
     }
     .spacer {
-        height: 425px;
+        height: 400px;
     }
     .dropdown-link-holder {
         border-right: none;

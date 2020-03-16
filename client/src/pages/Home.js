@@ -113,9 +113,9 @@ function Home() {
                             <img src={pool} alt="In-Ground Pool and Hot Tub Installation & Repair"/>
                         </picture>
                     </Link>
-                    <Link to="/professional-lawn-care" className="home-service-container">
+                    <Link to="/landscaping" className="home-service-container">
                         <h3 className="home-header3">
-                            Professional Lawn Care
+                            Landscaping
                         </h3>
                         <button className="home-service-button">
                             Learn More
@@ -185,9 +185,9 @@ function Home() {
                             <img src={sprinkler} alt="Lawn Sprinkler & Irrigation Systems Installation and Service"/>
                         </picture>
                     </Link>
-                    <Link to="/landscaping" className="home-service-container">
+                    <Link to="/gardening" className="home-service-container">
                         <h3 className="home-header3"> 
-                            Landscaping 
+                            Gardening 
                         </h3>
                         <picture className="home-image">
                             <source type="image/webp" srcSet={landscapingWebP} />

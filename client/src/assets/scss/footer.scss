@@ -13,6 +13,7 @@ footer {
     width: auto;
     height: auto;
     display: flex;
+    flex-flow: column;
     justify-content: center;
     align-items: center;
 }
@@ -33,11 +34,25 @@ footer {
     max-width: 300px;
     height: auto;
     position: relative;
-    padding: 20px 0;
+    padding: 15px;
     object-position: center;
     object-fit: contain;
     -o-object-fit: contain;
     -o-object-position: center;
+}
+.footer-logo2 {
+    width: 250px;
+    height: auto;
+    display: block;
+    padding: 15px;
+
+}
+
+.footer-text-row {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
 }
 .footer-row {
     display: flex;
@@ -48,9 +63,16 @@ footer {
 
 .footer-text {
     font-family: $sans;
-    font-size: 20px;
+    font-size: 18px;
     color: $white;
-    padding: 5px 14px;
+    padding: 5px;
+}
+.footer-link {
+    font-size: 18px;
+    font-family: $sans;
+    color: $white;
+    padding: 5px;
+    text-decoration: none;
 }
 
 .footer-credits {
@@ -71,12 +93,18 @@ footer {
     .footer-logo {
         width: 250px;
     }
+    .footer-logo2 {
+        width: 225px;
+    }
 }
 
 @media only screen and (max-width: 500px) {
     .footer-logo {
         width: 50%;
         min-width: 200px;
+    }
+    .footer-logo2 {
+        width: 200px;
     }
     .footer-credits {
         font-size: 12px;

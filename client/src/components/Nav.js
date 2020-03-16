@@ -1,6 +1,6 @@
 import React, { useReducer } from 'react';
 import { Link } from 'react-router-dom';
-import '../assets/css/nav.css';
+import '../assets/scss/nav.scss';
 
 const initialState = { 
     isToggled: false,
@@ -49,6 +49,12 @@ function Nav() {
                 McNeer Outdoors 
                 <span>
                     Professional Lawn Care
+                </span>
+                <span>
+                    Professional Lawn Sprinklers
+                </span>
+                <span>
+                    Mosquito Mist Control
                 </span>
             </Link> 
             <div className="toggle-menu">

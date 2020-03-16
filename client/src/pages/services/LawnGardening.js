@@ -35,7 +35,7 @@ function LawnGardening() {
             </div>
             <div className="service-section">
                 <p className="service-par">
-                    With years of experience in the Mississippi Delta,  we can help you find plants, flowers, and trees that will thrive on your property and add a special touch to your property. 
+                    With years of experience in the Mississippi Delta,  we can help you find plants, flowers, and trees that will thrive and add a special touch to your property. 
                 </p>
             </div>
         </div>

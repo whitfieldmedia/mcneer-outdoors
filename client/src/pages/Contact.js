@@ -8,6 +8,7 @@ function Contact() {
     let [ name, setName ] = useState("");
     let [ email, setEmail ] = useState("");
     let [ message, setMessage ] = useState("");
+    let [ phone, setPhone ] =  useState("");
     function handleSubmit() {
         axios({
             method: "POST",
@@ -15,12 +16,14 @@ function Contact() {
             data: {
                 name: name,
                 email: email,
+                phone: phone,
                 message: message
             }
         })
         setName('')
         setEmail('')
         setMessage('')
+        setPhone('')
     }
     useEffect(() => {
         window.scrollTo(0,0)
@@ -34,7 +37,7 @@ function Contact() {
                 <link rel="canonical" 
                     href="https://www.mcneeroutdoors/com/contact-us" />
                 <meta name="description" 
-                    content="If you have any questions give us a call at (662) 719-5306 or shoot an email to phil@mcneeroutdoors.com.  We offer free onsite inspections and McNeer Outdoors Professional Lawn Care is a name you can trust." 
+                    content="If you have any questions give us a call at (662) 745-2686 or shoot an email to phil@mcneeroutdoors.com.  We offer free onsite inspections and McNeer Outdoors Professional Lawn Care is a name you can trust." 
                     />
             </Helmet>
             <div className="contact-section">
@@ -49,8 +52,8 @@ function Contact() {
                         <h3 className="contact-header3">
                             Phone
                         </h3>
-                        <a href="tel:6627195306" className="contact-link">
-                            (662) 719-5306
+                        <a href="tel:6627452686" className="contact-link">
+                            (662) 745-2686
                         </a>
                     </div>
                     <div className="contact-link-holder">
@@ -63,39 +66,46 @@ function Contact() {
                     </div>
                 </div>
                 <div className="contact-form">
-                    <div className="contact-column">
-                        <label htmlFor="name" className="contact-label">
-                            Name*
-                        </label>
+                    <label for="name" className="contact-label">
+                        Name*
                         <input type="text"
                             className="contact-input"
                             placeholder="First & Last"
                             onChange={(e) => setName(e.target.value)}
                             value={name}
-                            />
-                    </div>
-                    <div className="contact-column">
-                        <label htmlFor="email" className="contact-label">
-                            Email*
-                        </label>
+                            name="name"
+                        />                            
+                    </label>
+                    <label for="email" className="contact-label">
+                        Email*
                         <input type="text"
                             className="contact-input"
                             placeholder="Email Address"
                             onChange={(e) => setEmail(e.target.value)}
                             value={email}
-                            />
-                    </div>
-                    <div className="contact-column">
-                        <label htmlFor="message" className="contact-label">
-                            Message*
-                        </label>
+                            name="email"
+                        />                            
+                    </label>
+                    <label for="phone"
+                        className="contact-label">
+                            Phone
+                        <input type="text"
+                            className="contact-input"
+                            placeholder="Phone Number"
+                            onChange={(e) => setPhone(e.target.value)}
+                            value={phone}
+                            name="phone" />
+                    </label>
+                    <label for="message" className="contact-label">
+                        Message
                         <input type="text"
                             className="contact-input"
                             placeholder="Message/Questions"
                             onChange={(e) => setMessage(e.target.value)}
                             value={message}
-                            />
-                    </div>
+                            name="message"
+                        />
+                    </label>
                     <button onClick={(e) => handleSubmit(e)} className="contact-button">
                         Send
                         <i className="fas fa-paper-plane"></i>

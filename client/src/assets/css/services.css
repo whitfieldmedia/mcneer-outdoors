@@ -185,11 +185,23 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 50px;
+  position: relative;
+  top: 0;
+  margin-top: 0;
+  padding-top: 0;
 }
 
 .pool-video {
   width: 100vw;
-  height: calc(100vh - 80px);
+  height: auto;
+  display: block;
+  position: relative;
+  top: 0;
+  max-height: 90vh;
+}
+
+.pool-video-mobile {
+  display: none;
 }
 
 .pool-header {
@@ -382,6 +394,18 @@
 
   .service-type-header {
     margin-top: -30px;
+  }
+
+  .pool-video {
+    display: none;
+  }
+
+  .pool-video-mobile {
+    display: block;
+    height: auto;
+    width: 100vw;
+    max-height: 90vh;
+    top: 0;
   }
 }
 @media only screen and (max-width: 600px) {

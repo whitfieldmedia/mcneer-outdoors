@@ -44,7 +44,6 @@
     padding: 25px 10px;
     margin: 0;
     margin-bottom: 25px;
-    background: $white2;
 }
 
 .contact-column {
@@ -62,6 +61,8 @@
     color: $black5;
     padding: 15px 0 5px 0;
     margin: 0;
+    display: flex;
+    flex-flow: column;
 }
 
 .contact-input {

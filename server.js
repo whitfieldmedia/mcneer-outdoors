@@ -37,6 +37,8 @@ app.use('/contact', (req, res) => {
         
         Reply To: ${req.body.email}
 
+        Phone: ${req.body.phone}
+
         Message: ${req.body.message}
         `,
     }
