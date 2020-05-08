@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import axios from 'axios';
+import React from 'react';
 import '../assets/css/quote.css';
 
 function RequestQuote() {
@@ -16,8 +15,6 @@ function RequestQuote() {
                     <input type="text"
                         className="quote-input"
                         placeholder="Name"
-                        onChange={(e) => setName(e.target.value)}
-                        value={name}
                         />
                 </div>
                 <div className="quote-column">
