@@ -35,7 +35,7 @@ function RequestQuote() {
             <h2 className="quote-header">
                 Request an Estimate
             </h2>
-            <div className="quote-container">
+            <form className="quote-container">
                 <div className="quote-column">
                     <label htmlFor="name" className="quote-label">
                         Name*
@@ -102,11 +102,11 @@ function RequestQuote() {
                         value={service}
                         />
                 </div>
-            </div>
-            <button className="quote-button" onClick={(e) => handleSubmit(e)}>
-                Send
-                <i className="fas fa-paper-plane"></i>
-            </button>
+                <button className="quote-button" onClick={(e) => handleSubmit(e)}>
+                    Send
+                    <i className="fas fa-paper-plane"></i>
+                </button>
+            </form>
         </div>
     )
 }

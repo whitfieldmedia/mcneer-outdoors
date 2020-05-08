@@ -1,30 +1,9 @@
-import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+import React, { useEffect } from 'react';
 import Facebook from '../components/Facebook';
 import { Helmet } from 'react-helmet';
 import '../assets/css/contact.css';
 
 function Contact() {
-    let [ name, setName ] = useState("");
-    let [ email, setEmail ] = useState("");
-    let [ message, setMessage ] = useState("");
-    let [ phone, setPhone ] =  useState("");
-    function handleSubmit() {
-        axios({
-            method: "POST",
-            url: "/contact",
-            data: {
-                name: name,
-                email: email,
-                phone: phone,
-                message: message
-            }
-        })
-        setName('')
-        setEmail('')
-        setMessage('')
-        setPhone('')
-    }
     useEffect(() => {
         window.scrollTo(0,0)
     }, [])
@@ -65,52 +44,44 @@ function Contact() {
                         </a>
                     </div>
                 </div>
-                <div className="contact-form">
-                    <label for="name" className="contact-label">
+                <form className="contact-form" action="https://formspree.io/philmcneer@gmail.com" method="POST">
+                    <label htmlFor="form_name" className="contact-label">
                         Name*
                         <input type="text"
                             className="contact-input"
                             placeholder="First & Last"
-                            onChange={(e) => setName(e.target.value)}
-                            value={name}
                             name="name"
                         />                            
                     </label>
-                    <label for="email" className="contact-label">
+                    <label htmlFor="form_email" className="contact-label">
                         Email*
                         <input type="text"
                             className="contact-input"
                             placeholder="Email Address"
-                            onChange={(e) => setEmail(e.target.value)}
-                            value={email}
                             name="email"
                         />                            
                     </label>
-                    <label for="phone"
+                    <label htmlFor="form_phone"
                         className="contact-label">
                             Phone
                         <input type="text"
                             className="contact-input"
                             placeholder="Phone Number"
-                            onChange={(e) => setPhone(e.target.value)}
-                            value={phone}
                             name="phone" />
                     </label>
-                    <label for="message" className="contact-label">
+                    <label htmlFor="form_message" className="contact-label">
                         Message
                         <input type="text"
                             className="contact-input"
                             placeholder="Message/Questions"
-                            onChange={(e) => setMessage(e.target.value)}
-                            value={message}
                             name="message"
                         />
                     </label>
-                    <button onClick={(e) => handleSubmit(e)} className="contact-button">
+                    <button className="contact-button">
                         Send
                         <i className="fas fa-paper-plane"></i>
                     </button>
-                </div>
+                </form>
             </div>
             <div className="contact-facebook-wrapper">
                 <Facebook />
