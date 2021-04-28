@@ -230,6 +230,16 @@
     margin-top: 50px;
 }
 
+.hearth-banner {
+	width: 700px;
+	height: 110px;
+	margin: 0 auto;
+}
+
+.hearth-banner-mobile {
+	display: none;
+}
+
 @media only screen and (max-width: 1000px) {
     .toggle-menu * {
         display: block;
@@ -357,6 +367,23 @@
     .nav-icon-holder {
         display: none;
     }
+	
+	.hearth-banner {
+		display: none;
+	}	
+	.hearth-banner-mobile {
+		display: block;
+		width: 700px;
+		height: 110px;
+		margin: 0 auto;
+	}
+	.hearth-sm {
+		height: auto;
+		width: 700px;
+	}
+	.hearth-xs {
+		display: none;
+	}
 }
 
 @media only screen and (max-width: 910px) {
@@ -369,6 +396,18 @@
     .spacer {
         height: 160px;
     }
+	.hearth-banner-mobile {
+		height: 310px;
+		width: 310px;
+		margin: 0 auto;
+	}
+	.hearth-sm {
+		display: none;
+	}
+	.hearth-xs {
+		width: 100%;
+		height: auto;
+	}
 }
 
 @media only screen and (max-width: 500px) {

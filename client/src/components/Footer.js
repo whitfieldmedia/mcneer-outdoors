@@ -5,6 +5,9 @@ import mosquito_logo from '../assets/images/mosquito_mist_control.svg';
 import { Link } from 'react-router-dom';
 import '../assets/css/footer.css';
 
+<script src="https://widget.gethearth.com/script.js" id="hearth-script" data-orgid="25401" data-partner="professional-lawn-care-inc"></script> 
+<iframe id="hearth-widget_calculator_v1"></iframe>
+
 function Footer() {
     return (
         <footer>
