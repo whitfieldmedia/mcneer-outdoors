@@ -61,7 +61,7 @@ function Home() {
 	    <a href="https://app.gethearth.com/partners/professional-lawn-care-inc?utm_campaign=25401&utm_content=darkblue&utm_medium=contractor-website&utm_source=contractor&utm_term=700x110" target="_blank"> <img src="https://app.gethearth.com/contractor_images/professional-lawn-care-inc/banner.jpg?color=darkblue&size_id=700x110"alt="Hearth 700x110"style="height:110px;width:700px" /> </a>
 
         <div className="home-page">
-	        <sectin className="home-carousel">
+	        <section className="home-carousel">
                 <div className="background-overlay"></div>
                 <div className="carousel-slide-container" id="slide2">
                     
