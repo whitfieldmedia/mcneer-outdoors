@@ -63,8 +63,9 @@ function Home() {
                 <div className="carousel-slide-container" id="slide2">
                     
 					<h1 className="home-header">
-	    <a href="https://app.gethearth.com/partners/professional-lawn-care-inc?utm_campaign=25401&utm_content=darkblue&utm_medium=contractor-website&utm_source=contractor&utm_term=700x110" target="_blank"> <img src="https://app.gethearth.com/contractor_images/professional-lawn-care-inc/banner.jpg?color=darkblue&size_id=700x110"alt="Hearth 700x110"style="height:110px;width:700px" /> </a>
-                        McNeer Outdoors
+	    <a href="https://app.gethearth.com/partners/professional-lawn-care-inc?utm_campaign=25401&utm_content=darkblue&utm_medium=contractor-website&utm_source=contractor&utm_term=700x110" target="_blank"> <img src="https://github.com/whitfieldmedia/mcneer-outdoors/blob/master/client/src/assets/images/700x110_darkblue.jpg?color=darkblue&size_id=700x110"alt="Hearth 700x110"style="height:110px;width:700px" /> </a>
+                       
+	    McNeer Outdoors
                     </h1>
                     <p className="home-carousel-text">
                         We specialize in pool & hot tub installation & repair.  We use high quality finishes to provide you with a pool you can enjoy for years to come! 
