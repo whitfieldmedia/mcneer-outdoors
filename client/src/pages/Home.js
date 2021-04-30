@@ -36,7 +36,7 @@ import movie from '../assets/videos/video.mp4';
 import movieMobile from '../assets/videos/mobile_pool_video.mp4';
 import { Link } from 'react-router-dom';
 import '../assets/scss/home.scss';
-import hearth from '../assets/images/hearth.png';
+import hearth from 'https://github.com/whitfieldmedia/mcneer-outdoors/blob/632e2cc44020bf5a42b72096e7ee09fba643c347/client/src/assets/images/700x110_darkblue.jpg?raw=true';
 
 function Home() {
     let [ testimonialCount, setTestimonialCount ] = useState(0);
@@ -59,6 +59,7 @@ function Home() {
     }, [])
     return (
         <div className="home-page">
+	    <a>src:"https://github.com/whitfieldmedia/mcneer-outdoors/blob/632e2cc44020bf5a42b72096e7ee09fba643c347/client/src/assets/images/700x110_darkblue.jpg?raw=true"</a>
             <section className="home-carousel">
                 <div className="background-overlay"></div>
                 <div className="carousel-slide-container" id="slide2">
