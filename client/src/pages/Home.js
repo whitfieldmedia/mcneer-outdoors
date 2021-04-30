@@ -36,7 +36,7 @@ import movie from '../assets/videos/video.mp4';
 import movieMobile from '../assets/videos/mobile_pool_video.mp4';
 import { Link } from 'react-router-dom';
 import '../assets/scss/home.scss';
-import hearth from 'https://github.com/whitfieldmedia/mcneer-outdoors/blob/632e2cc44020bf5a42b72096e7ee09fba643c347/client/src/assets/images/700x110_darkblue.jpg?raw=true';
+
 
 function Home() {
     let [ testimonialCount, setTestimonialCount ] = useState(0);
@@ -59,7 +59,7 @@ function Home() {
     }, [])
     return (
         <div className="home-page">
-	    <a>src:"https://github.com/whitfieldmedia/mcneer-outdoors/blob/632e2cc44020bf5a42b72096e7ee09fba643c347/client/src/assets/images/700x110_darkblue.jpg?raw=true"</a>
+	    <a href="https://app.gethearth.com/partners/professional-lawn-care-inc?utm_campaign=25401&utm_content=darkblue&utm_medium=contractor-website&utm_source=contractor&utm_term=700x110" target="_blank"> <img src="https://app.gethearth.com/contractor_images/professional-lawn-care-inc/banner.jpg?color=darkblue&size_id=700x110"alt="Hearth 700x110"style="height:110px;width:700px" /> </a>
             <section className="home-carousel">
                 <div className="background-overlay"></div>
                 <div className="carousel-slide-container" id="slide2">
@@ -71,12 +71,7 @@ function Home() {
                     <p className="home-carousel-text">
                         We specialize in pool & hot tub installation & repair.  We use high quality finishes to provide you with a pool you can enjoy for years to come! 
                     </p>
-		<p><Link to="https://app.gethearth.com/partners/professional-lawn-care-inc?utm_campaign=25401&utm_content=darkblue&utm_medium=contractor-website&utm_source=contractor&utm_term=700x110" target="_blank">" className="home-carousel-row">
-                        <picture>
-                            <source type="image/png" srcSet={hearth} />
-                            <img src={hearth} className="home-pool-logo" alt="hearth"/>
-                        </picture></p>
-                    <Link to="/pools" className="home-carousel-row">
+		
                         <picture>
                             <source type="image/webp" srcSet={ecoDustrialW} />
                             <img src={ecoDustrial} className="home-pool-logo" alt="Eco Dustrial"/>
