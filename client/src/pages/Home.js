@@ -36,7 +36,7 @@ import movie from '../assets/videos/video.mp4';
 import movieMobile from '../assets/videos/mobile_pool_video.mp4';
 import { Link } from 'react-router-dom';
 import '../assets/scss/home.scss';
-import'../assets/images/hearth.png';
+import hearth from '../assets/images/hearth.png';
 
 function Home() {
     let [ testimonialCount, setTestimonialCount ] = useState(0);
@@ -75,11 +75,12 @@ function Home() {
                             <source type="image/png" srcSet={hearth} />
                             <img src={hearth} className="home-pool-logo" alt="hearth"/>
                         </picture>
-                    <Link <Link to="/pools" className="home-carousel-row">
+                    <Link to="/pools" className="home-carousel-row">
                         <picture>
                             <source type="image/webp" srcSet={ecoDustrialW} />
                             <img src={ecoDustrial} className="home-pool-logo" alt="Eco Dustrial"/>
-                        </picture>to="/pools" className="home-carousel-row">
+                        </picture>
+	    <Link to="/pools" className="home-carousel-row">
                         <picture>
                             <source type="image/webp" srcSet={ecoDustrialW} />
                             <img src={ecoDustrial} className="home-pool-logo" alt="Eco Dustrial"/>
