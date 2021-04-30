@@ -36,6 +36,7 @@ import movie from '../assets/videos/video.mp4';
 import movieMobile from '../assets/videos/mobile_pool_video.mp4';
 import { Link } from 'react-router-dom';
 import '../assets/scss/home.scss';
+import'../assets/images/hearth.png';
 
 function Home() {
     let [ testimonialCount, setTestimonialCount ] = useState(0);
