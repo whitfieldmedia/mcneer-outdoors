@@ -70,11 +70,11 @@ function Home() {
                     <p className="home-carousel-text">
                         We specialize in pool & hot tub installation & repair.  We use high quality finishes to provide you with a pool you can enjoy for years to come! 
                     </p>
-		<Link to="https://app.gethearth.com/partners/professional-lawn-care-inc?utm_campaign=25401&utm_content=darkblue&utm_medium=contractor-website&utm_source=contractor&utm_term=700x110" target="_blank">" className="home-carousel-row">
+		<p><Link to="https://app.gethearth.com/partners/professional-lawn-care-inc?utm_campaign=25401&utm_content=darkblue&utm_medium=contractor-website&utm_source=contractor&utm_term=700x110" target="_blank">" className="home-carousel-row">
                         <picture>
                             <source type="image/png" srcSet={hearth} />
                             <img src={hearth} className="home-pool-logo" alt="hearth"/>
-                        </picture>
+                        </picture></p>
                     <Link to="/pools" className="home-carousel-row">
                         <picture>
                             <source type="image/webp" srcSet={ecoDustrialW} />
