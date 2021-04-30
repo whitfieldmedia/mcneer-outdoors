@@ -65,7 +65,7 @@ function Home() {
                 <div className="carousel-slide-container" id="slide2">
                     
 					<h1 className="home-header">
-	                 
+	    Financing             
 	    McNeer Outdoors 
 	    </h1>
                     <p className="home-carousel-text">
